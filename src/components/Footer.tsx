@@ -20,7 +20,7 @@ const Footer = () => {
 
           <div className="flex gap-6">
             <a
-              href="https://github.com/taro-tanaka-dev"
+              href="https://github.com/Higash37"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center gap-2"
@@ -28,26 +28,10 @@ const Footer = () => {
               <span>📱</span> GitHub
             </a>
             <a
-              href="mailto:taro.tanaka.dev@gmail.com"
+              href="mailto:higashionna37@icloud.com"
               className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center gap-2"
             >
               <span>✉️</span> Email
-            </a>
-            <a
-              href="https://linkedin.com/in/taro-tanaka-dev"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center gap-2"
-            >
-              <span>💼</span> LinkedIn
-            </a>
-            <a
-              href="https://twitter.com/taro_dev"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center gap-2"
-            >
-              <span>🐦</span> Twitter
             </a>
           </div>
         </div>

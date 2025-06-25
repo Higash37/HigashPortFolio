@@ -1,7 +1,7 @@
 {
-  "name": "田中太郎 ポートフォリオ",
-  "short_name": "田中太郎",
-  "description": "React + TypeScript + Vite + Tailwind CSS で構築したモダンなポートフォリオサイト",
+  "name": "東恩納良 ポートフォリオ",
+  "short_name": "東恩納良",
+  "description": "React、React Native、Excel VBAを専門とするフルスタック開発者のポートフォリオサイト",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

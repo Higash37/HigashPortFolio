@@ -33,6 +33,6 @@
   <rect x="104" y="108" width="2" height="2" rx="0.5" fill="white"/>
   <rect x="108" y="108" width="2" height="2" rx="0.5" fill="white"/>
   
-  <!-- T文字（田中の頭文字） -->
+  <!-- T文字（東恩納良の頭文字） -->
   <text x="96" y="75" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2563eb">T</text>
 </svg>

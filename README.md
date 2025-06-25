@@ -51,7 +51,7 @@ src/
 
 ```bash
 # リポジトリをクローン
-git clone https://github.com/taro-tanaka-dev/my-portfolio.git
+git clone https://github.com/Higash37/my-portfolio.git
 cd my-portfolio
 
 # 依存関係をインストール
@@ -131,9 +131,9 @@ MIT License
 
 ## 👤 作者
 
-東恩納　良
+東恩納良
 
-- GitHub: [@taro-tanaka-dev](https://github.com/taro-tanaka-dev)
+- GitHub: [@Higash37](https://github.com/Higash37)
 - Email: [higashionna37@icloud.com](mailto:higashionna37@icloud.com)
 
 ## 🤝 貢献

@@ -79,13 +79,13 @@ const AboutSection = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="mailto:taro.tanaka.dev@gmail.com"
+                  href="mailto:higashionna37@icloud.com"
                   className="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-purple-50 transition-colors duration-200"
                 >
                   📧 メールで連絡
                 </a>
                 <a
-                  href="https://github.com/taro-tanaka-dev"
+                  href="https://github.com/Higash37"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition-colors duration-200"

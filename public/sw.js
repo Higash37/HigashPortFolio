@@ -1,4 +1,4 @@
-const CACHE_NAME = "taro-portfolio-v1";
+const CACHE_NAME = "ryo-higashionna-portfolio-v1";
 const urlsToCache = [
   "/",
   "/manifest.json",

@@ -7,8 +7,8 @@ const projects = [
     description:
       "React + TypeScript + Tailwind CSSで開発したレスポンシブなポートフォリオサイト。モダンなデザインと滑らかなアニメーションが特徴。",
     tech: ["React", "TypeScript", "Tailwind CSS", "Vite"],
-    link: "https://taro-tanaka-portfolio.vercel.app",
-    github: "https://github.com/taro-tanaka-dev/portfolio",
+    link: "https://github.com/Higash37",
+    github: "https://github.com/Higash37",
     type: "web" as const,
   },
   {
@@ -17,7 +17,7 @@ const projects = [
     description:
       "React Nativeで開発したシフト管理アプリ。直感的なUI、リアルタイム通知、スケジュール調整機能を実装。個人開発で3ヶ月で完成。",
     tech: ["React Native", "TypeScript", "Expo", "Firebase", "Zustand"],
-    github: "https://github.com/taro-tanaka-dev/shift-ease",
+    github: "https://github.com/Higash37",
     type: "mobile" as const,
   },
   {
@@ -26,8 +26,8 @@ const projects = [
     description:
       "Excel VBAで開発した業務効率化ツール。複数店舗の売上データを自動集計し、グラフ付きレポートを生成。作業時間を90%短縮。",
     tech: ["Excel VBA", "Power Query", "Power Pivot", "SQL"],
-    link: "https://github.com/taro-tanaka-dev/excel-sales-tool/releases",
-    github: "https://github.com/taro-tanaka-dev/excel-sales-tool",
+    link: "https://github.com/Higash37",
+    github: "https://github.com/Higash37",
     type: "excel" as const,
   },
   {
@@ -36,8 +36,8 @@ const projects = [
     description:
       "教師・講師向けの小テスト作成ツール。直感的な操作で問題作成、自動採点、成績管理が可能。教育現場での業務効率化を実現。",
     tech: ["React", "Node.js", "MongoDB", "Express", "Chart.js"],
-    link: "https://quiz-maker-demo.vercel.app",
-    github: "https://github.com/taro-tanaka-dev/quiz-maker",
+    link: "https://github.com/Higash37",
+    github: "https://github.com/Higash37",
     type: "web" as const,
   },
 ];

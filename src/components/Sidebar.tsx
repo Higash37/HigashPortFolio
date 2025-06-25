@@ -97,7 +97,7 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
               外部リンク
             </h3>
             <a
-              href="https://github.com/taro-tanaka-dev"
+              href="https://github.com/Higash37"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors duration-200 text-gray-700 hover:text-gray-900"
@@ -107,7 +107,7 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
               <span className="text-xs text-gray-500 ml-auto">↗</span>
             </a>
             <a
-              href="mailto:taro.tanaka.dev@gmail.com"
+              href="mailto:higashionna37@icloud.com"
               className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors duration-200 text-gray-700 hover:text-gray-900"
             >
               <span>📧</span>

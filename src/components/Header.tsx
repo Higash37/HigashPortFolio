@@ -11,7 +11,7 @@ const Header = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
             東恩納 良
             <span className="block text-2xl md:text-3xl mt-2 text-blue-200">
-              Taro Tanaka
+              Ryo Higashionna
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-blue-100 mb-8">
@@ -19,7 +19,7 @@ const Header = () => {
           </p>
           <div className="flex justify-center gap-4">
             <a
-              href="https://github.com/taro-tanaka-dev"
+              href="https://github.com/Higash37"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200"

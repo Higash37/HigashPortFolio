@@ -7,6 +7,7 @@ import AboutSection from "./components/AboutSection";
 import Footer from "./components/Footer";
 import SkeletonLoader from "./components/SkeletonLoader";
 import PWAInstaller from "./components/PWAInstaller";
+import SEO from "./components/SEO";
 import "./App.css";
 
 function App() {
@@ -44,9 +45,11 @@ function App() {
 
     loadSections();
   }, []);
-
   return (
     <Layout>
+      {/* SEO設定 */}
+      <SEO />
+
       {/* PWA インストールプロンプト */}
       <PWAInstaller />
 

@@ -44,7 +44,7 @@ const NavigationHeader = ({ onMenuToggle }: NavigationHeaderProps) => {
           {/* 右側のボタン */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="https://github.com/taro-tanaka-dev"
+              href="https://github.com/Higash37"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-blue-600 px-4 py-2 rounded text-sm font-semibold hover:bg-blue-50 transition-colors duration-200"
@@ -52,7 +52,7 @@ const NavigationHeader = ({ onMenuToggle }: NavigationHeaderProps) => {
               GitHub
             </a>
             <a
-              href="mailto:taro.tanaka.dev@gmail.com"
+              href="mailto:higashionna37@icloud.com"
               className="bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded text-sm font-semibold transition-colors duration-200"
             >
               お問い合わせ
