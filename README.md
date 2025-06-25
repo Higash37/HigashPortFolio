@@ -1,70 +1,145 @@
-# React + TypeScript + Vite
+# 田中太郎 ポートフォリオサイト
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React + TypeScript + Vite + Tailwind CSS で構築したモダンなポートフォリオサイトです。
 
-Currently, two official plugins are available:
+## 🌟 特徴
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **レスポンシブデザイン**: PC・タブレット・スマートフォンに完全対応
+- **モダンな UI**: Tailwind CSS による美しいデザイン
+- **固定ヘッダー**: 常に表示されるナビゲーション
+- **サイドバー**: PC では常時表示、モバイルではハンバーガーメニュー
+- **スムーズな UX**: オーバースクロール制限とスムーズスクロール
+- **高速**: Vite による高速な開発環境とビルド
 
-## Expanding the ESLint configuration
+## 🛠️ 技術スタック
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **フロントエンド**: React 18
+- **言語**: TypeScript
+- **ビルドツール**: Vite
+- **スタイリング**: Tailwind CSS v3
+- **開発環境**: ESLint + Prettier
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🎯 プロジェクト構成
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+```ts
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+src/
+├── components/           # コンポーネント
+│   ├── Layout.tsx       # レイアウト管理
+│   ├── NavigationHeader.tsx  # 固定ヘッダー
+│   ├── Sidebar.tsx      # サイドバー
+│   ├── Header.tsx       # メインヘッダー
+│   ├── AboutSection.tsx # 自己紹介セクション
+│   ├── SkillsSection.tsx # スキルセクション
+│   ├── ProjectsSection.tsx # プロジェクトセクション
+│   ├── ProjectCard.tsx  # プロジェクトカード
+│   └── Footer.tsx       # フッター
+├── App.tsx              # メインアプリ
+├── App.css              # カスタムスタイル
+├── index.css            # グローバルスタイル
+└── main.tsx             # エントリーポイント
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 セットアップ
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 前提条件
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Node.js (v18 以上)
+- npm または yarn
+
+### インストール
+
+```bash
+# リポジトリをクローン
+git clone https://github.com/taro-tanaka-dev/my-portfolio.git
+cd my-portfolio
+
+# 依存関係をインストール
+npm install
+
+# 開発サーバーを起動
+npm run dev
 ```
-"# HigashPortFolio" 
+
+### ビルド
+
+```bash
+# 本番用ビルド
+npm run build
+
+# ビルド結果をプレビュー
+npm run preview
+```
+
+## 📱 レスポンシブ対応
+
+### PC（1024px 以上）
+
+- サイドバー常時表示（2:8 レイアウト）
+- ナビゲーションヘッダーにメニュー表示
+
+### タブレット・スマートフォン（1024px 未満）
+
+- サイドバーはオーバーレイ表示
+- ハンバーガーメニューでサイドバー操作
+- タッチ操作に最適化
+
+## 🎨 主要機能
+
+### ナビゲーション
+
+- 固定ヘッダー（z-index: 50）
+- スムーズスクロール
+- セクション間リンク
+
+### サイドバー
+
+- プロフィール表示
+- ナビゲーションメニュー
+- 外部リンク
+- 統計情報
+
+### セクション
+
+- **ヘッダー**: プロフィール、GitHub・プロジェクトリンク
+- **自己紹介**: 経歴、連絡先、強み
+- **スキル**: 技術スタック一覧
+- **プロジェクト**: 作品紹介（デモ・GitHub リンク付き）
+- **フッター**: SNS リンク、著作権情報
+
+## 🎯 カスタマイズ
+
+### プロフィール情報の変更
+
+`src/components/` 内の各コンポーネントで以下を編集：
+
+- 名前・職業
+- GitHub リンク
+- メールアドレス
+- スキル一覧
+- プロジェクト情報
+
+### スタイルのカスタマイズ
+
+- `tailwind.config.js`: Tailwind CSS 設定
+- `src/index.css`: グローバルスタイル
+- `src/App.css`: カスタムスタイル
+
+## 📝 ライセンス
+
+MIT License
+
+## 👤 作者
+
+東恩納良
+
+- GitHub: [@taro-tanaka-dev](https://github.com/taro-tanaka-dev)
+- Email: [higashionna37@icloud.com](mailto:higashionna37@icloud.com)
+
+## 🤝 貢献
+
+プルリクエストやイシューの報告を歓迎します！
+
+---
+
+### Built with ❤️ using React + TypeScript + Vite + Tailwind CSS
