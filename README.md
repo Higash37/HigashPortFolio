@@ -1,4 +1,4 @@
-# 田中太郎 ポートフォリオサイト
+# 東恩納　良 ポートフォリオサイト
 
 React + TypeScript + Vite + Tailwind CSS で構築したモダンなポートフォリオサイトです。
 
@@ -131,7 +131,7 @@ MIT License
 
 ## 👤 作者
 
-東恩納良
+東恩納　良
 
 - GitHub: [@taro-tanaka-dev](https://github.com/taro-tanaka-dev)
 - Email: [higashionna37@icloud.com](mailto:higashionna37@icloud.com)

@@ -1,0 +1,44 @@
+<!-- 512x512版 -->
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad512" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="512" height="512" rx="75" fill="url(#bgGrad512)"/>
+  
+  <!-- 白い円の背景 -->
+  <circle cx="256" cy="256" r="130" fill="white" opacity="0.95"/>
+  
+  <!-- ラップトップ画面 -->
+  <rect x="186" y="226" width="140" height="90" rx="8" fill="#2563eb"/>
+  <rect x="194" y="234" width="124" height="64" rx="4" fill="white"/>
+  
+  <!-- コード行 -->
+  <rect x="202" y="244" width="30" height="4" fill="#2563eb"/>
+  <rect x="202" y="252" width="45" height="4" fill="#2563eb"/>
+  <rect x="202" y="260" width="38" height="4" fill="#2563eb"/>
+  <rect x="202" y="268" width="52" height="4" fill="#2563eb"/>
+  <rect x="202" y="276" width="28" height="4" fill="#2563eb"/>
+  <rect x="202" y="284" width="42" height="4" fill="#2563eb"/>
+  
+  <!-- キーボード -->
+  <rect x="194" y="320" width="124" height="24" rx="4" fill="#374151"/>
+  
+  <!-- キーボードキー -->
+  <rect x="202" y="326" width="8" height="6" rx="2" fill="white"/>
+  <rect x="214" y="326" width="8" height="6" rx="2" fill="white"/>
+  <rect x="226" y="326" width="8" height="6" rx="2" fill="white"/>
+  <rect x="238" y="326" width="8" height="6" rx="2" fill="white"/>
+  <rect x="250" y="326" width="8" height="6" rx="2" fill="white"/>
+  <rect x="262" y="326" width="8" height="6" rx="2" fill="white"/>
+  <rect x="274" y="326" width="8" height="6" rx="2" fill="white"/>
+  <rect x="286" y="326" width="8" height="6" rx="2" fill="white"/>
+  <rect x="298" y="326" width="8" height="6" rx="2" fill="white"/>
+  
+  <!-- T文字（田中の頭文字） -->
+  <text x="256" y="190" font-family="Arial, sans-serif" font-size="64" font-weight="bold" text-anchor="middle" fill="#2563eb">T</text>
+</svg>

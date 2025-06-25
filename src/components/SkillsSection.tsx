@@ -1,29 +1,71 @@
+import {
+  FaReact,
+  FaJs,
+  FaHtml5,
+  FaCss3Alt,
+  FaNode,
+  FaMobile,
+  FaGitAlt,
+  FaAndroid,
+  FaApple,
+  FaTable,
+} from "react-icons/fa";
+import {
+  SiTypescript,
+  SiTailwindcss,
+  SiExpo,
+  SiExpress,
+  SiMongodb,
+  SiFirebase,
+  SiVite,
+  SiWebpack,
+} from "react-icons/si";
+
 const skills = [
   {
     category: "フロントエンド",
     items: [
-      "React",
-      "TypeScript",
-      "JavaScript",
-      "HTML5",
-      "CSS3",
-      "Tailwind CSS",
+      { name: "React", icon: <FaReact className="text-blue-500" /> },
+      { name: "TypeScript", icon: <SiTypescript className="text-blue-600" /> },
+      { name: "JavaScript", icon: <FaJs className="text-yellow-500" /> },
+      { name: "HTML5", icon: <FaHtml5 className="text-orange-600" /> },
+      { name: "CSS3", icon: <FaCss3Alt className="text-blue-500" /> },
+      {
+        name: "Tailwind CSS",
+        icon: <SiTailwindcss className="text-teal-500" />,
+      },
     ],
     icon: "🎨",
   },
   {
     category: "モバイル開発",
-    items: ["React Native", "Expo", "Android", "iOS"],
+    items: [
+      { name: "React Native", icon: <FaMobile className="text-blue-500" /> },
+      { name: "Expo", icon: <SiExpo className="text-black" /> },
+      { name: "Android", icon: <FaAndroid className="text-green-500" /> },
+      { name: "iOS", icon: <FaApple className="text-gray-700" /> },
+    ],
     icon: "📱",
   },
   {
     category: "バックエンド",
-    items: ["Node.js", "Express", "MongoDB", "Firebase"],
+    items: [
+      { name: "Node.js", icon: <FaNode className="text-green-600" /> },
+      { name: "Express", icon: <SiExpress className="text-gray-700" /> },
+      { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
+      { name: "Firebase", icon: <SiFirebase className="text-orange-500" /> },
+    ],
     icon: "⚙️",
   },
   {
     category: "ツール・その他",
-    items: ["Git", "Excel VBA", "Power Query", "Vite", "Webpack"],
+    items: [
+      { name: "Git", icon: <FaGitAlt className="text-orange-600" /> },
+      { name: "Excel VBA", icon: <FaTable className="text-green-600" /> },
+      { name: "Power Query", icon: <FaTable className="text-blue-600" /> },
+      { name: "Vite", icon: <SiVite className="text-purple-500" /> },
+      { name: "Webpack", icon: <SiWebpack className="text-blue-400" /> },
+    ],
     icon: "🛠️",
   },
 ];
@@ -57,9 +99,10 @@ const SkillsSection = () => {
                 {skill.items.map((item, itemIndex) => (
                   <li
                     key={itemIndex}
-                    className="text-gray-600 text-center py-1 px-3 bg-white rounded-full text-sm"
+                    className="text-gray-600 text-center py-2 px-3 bg-white rounded-full text-sm flex items-center justify-center gap-2"
                   >
-                    {item}
+                    {item.icon}
+                    <span>{item.name}</span>
                   </li>
                 ))}
               </ul>

@@ -8,7 +8,7 @@ const AboutSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              田中太郎について
+              東恩納 良について
             </h2>
             <p className="text-xl text-purple-100">
               2024年から本格的にWeb開発をスタート | 東京都在住 | 26歳

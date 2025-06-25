@@ -9,7 +9,7 @@ const Header = () => {
             </div>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            田中 太郎
+            東恩納 良
             <span className="block text-2xl md:text-3xl mt-2 text-blue-200">
               Taro Tanaka
             </span>

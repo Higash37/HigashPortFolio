@@ -10,32 +10,32 @@ const NavigationHeader = ({ onMenuToggle }: NavigationHeaderProps) => {
           {/* ロゴ・タイトル */}
           <div className="flex items-center gap-3">
             <span className="text-xl">👨‍💻</span>
-            <span className="font-bold text-lg">田中太郎ポートフォリオ</span>
+            <span className="font-bold text-lg">東恩納 良ポートフォリオ</span>
           </div>
 
           {/* ナビゲーションメニュー - PC版では非表示 */}
-          <div className="hidden xl:flex items-center gap-6">
+          <div className="hidden xl:flex items-center gap-6 ">
             <a
               href="#projects"
-              className="hover:bg-blue-700 px-3 py-2 rounded transition-colors duration-200"
+              className="hover:bg-blue-700 text-white px-3 py-2 rounded transition-colors duration-200"
             >
               プロジェクト
             </a>
             <a
               href="#skills"
-              className="hover:bg-blue-700 px-3 py-2 rounded transition-colors duration-200"
+              className="hover:bg-blue-700 text-white px-3 py-2 rounded transition-colors duration-200"
             >
               スキル
             </a>
             <a
               href="#about"
-              className="hover:bg-blue-700 px-3 py-2 rounded transition-colors duration-200"
+              className="hover:bg-blue-700 text-white px-3 py-2 rounded transition-colors duration-200"
             >
               自己紹介
             </a>
             <a
               href="#contact"
-              className="hover:bg-blue-700 px-3 py-2 rounded transition-colors duration-200"
+              className="hover:bg-blue-700 text-white px-3 py-2  rounded transition-colors duration-200"
             >
               お問い合わせ
             </a>
@@ -53,7 +53,7 @@ const NavigationHeader = ({ onMenuToggle }: NavigationHeaderProps) => {
             </a>
             <a
               href="mailto:taro.tanaka.dev@gmail.com"
-              className="bg-blue-700 hover:bg-blue-800 px-4 py-2 rounded text-sm font-semibold transition-colors duration-200"
+              className="bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded text-sm font-semibold transition-colors duration-200"
             >
               お問い合わせ
             </a>

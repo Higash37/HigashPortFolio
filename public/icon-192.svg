@@ -1,0 +1,38 @@
+<!-- 実用的な192x192 PWAアイコン -->
+<svg width="192" height="192" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="192" height="192" rx="28" fill="url(#bgGrad)"/>
+  
+  <!-- 白い円の背景 -->
+  <circle cx="96" cy="96" r="50" fill="white" opacity="0.95"/>
+  
+  <!-- 開発者アイコン（簡略化） -->
+  <rect x="76" y="86" width="40" height="25" rx="2" fill="#2563eb"/>
+  <rect x="78" y="88" width="36" height="16" rx="1" fill="white"/>
+  <rect x="80" y="90" width="8" height="1" fill="#2563eb"/>
+  <rect x="80" y="92" width="12" height="1" fill="#2563eb"/>
+  <rect x="80" y="94" width="10" height="1" fill="#2563eb"/>
+  <rect x="80" y="96" width="14" height="1" fill="#2563eb"/>
+  <rect x="80" y="98" width="8" height="1" fill="#2563eb"/>
+  
+  <!-- キーボード -->
+  <rect x="78" y="106" width="36" height="8" rx="1" fill="#374151"/>
+  <rect x="80" y="108" width="2" height="2" rx="0.5" fill="white"/>
+  <rect x="84" y="108" width="2" height="2" rx="0.5" fill="white"/>
+  <rect x="88" y="108" width="2" height="2" rx="0.5" fill="white"/>
+  <rect x="92" y="108" width="2" height="2" rx="0.5" fill="white"/>
+  <rect x="96" y="108" width="2" height="2" rx="0.5" fill="white"/>
+  <rect x="100" y="108" width="2" height="2" rx="0.5" fill="white"/>
+  <rect x="104" y="108" width="2" height="2" rx="0.5" fill="white"/>
+  <rect x="108" y="108" width="2" height="2" rx="0.5" fill="white"/>
+  
+  <!-- T文字（田中の頭文字） -->
+  <text x="96" y="75" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2563eb">T</text>
+</svg>

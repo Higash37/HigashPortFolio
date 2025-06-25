@@ -42,7 +42,7 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
                 <span className="text-xl">👨‍💻</span>
               </div>
               <div>
-                <h3 className="font-semibold text-gray-800">田中 太郎</h3>
+                <h3 className="font-semibold text-gray-800">東恩納 良</h3>
                 <p className="text-sm text-gray-600">フルスタック開発者</p>
               </div>
             </div>

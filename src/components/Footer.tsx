@@ -9,7 +9,9 @@ const Footer = () => {
       <div className="max-w-full px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <h3 className="text-xl font-bold mb-2">田中 太郎 | Taro Tanaka</h3>
+            <h3 className="text-xl font-bold mb-2">
+              東恩納 良 | Ryo Higashionna
+            </h3>
             <p className="text-gray-400">フルスタック開発者 | 東京都在住</p>
             <p className="text-gray-400 text-sm mt-1">
               Web・モバイル・業務効率化のソリューションを提供
@@ -52,7 +54,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © {currentYear} Taro Tanaka. All rights reserved. |
+            © {currentYear} Ryo Higashionna. All rights reserved. |
             <span className="ml-2">
               🚀 Built with React + TypeScript + Tailwind CSS
             </span>
