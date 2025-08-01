@@ -1,24 +1,16 @@
 import {
   FaReact,
   FaJs,
-  FaHtml5,
-  FaCss3Alt,
   FaNode,
   FaMobile,
   FaGitAlt,
-  FaAndroid,
-  FaApple,
   FaTable,
 } from "react-icons/fa";
 import {
   SiTypescript,
   SiTailwindcss,
   SiExpo,
-  SiExpress,
-  SiMongodb,
   SiFirebase,
-  SiVite,
-  SiWebpack,
 } from "react-icons/si";
 import type { ModalContent } from "../App";
 
