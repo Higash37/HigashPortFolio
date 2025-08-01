@@ -6,15 +6,17 @@ const Footer = () => {
       id="contact"
       className="bg-gray-800 text-white py-8 relative z-50 w-full"
     >
-      <div className="max-w-full px-4">
+      <div className="max-w-5xl mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <h3 className="text-xl font-bold mb-2">
               東恩納 良 | Ryo Higashionna
             </h3>
-            <p className="text-gray-400">フルスタック開発者 | 東京都在住</p>
+            <p className="text-gray-400">
+              フルスタック開発者 | 神奈川県川崎市在住
+            </p>
             <p className="text-gray-400 text-sm mt-1">
-              Web・モバイル・業務効率化のソリューションを提供
+              AIを用いたWeb・モバイル・業務効率化のソリューションを提供
             </p>
           </div>
 

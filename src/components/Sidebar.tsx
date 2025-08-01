@@ -47,7 +47,7 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
               </div>
             </div>
             <div className="text-xs text-gray-500">
-              <p>🏠 東京都在住</p>
+              <p>🏠 神奈川県川崎市在住</p>
               <p>📅 2024年から本格開発</p>
             </div>
           </div>
@@ -127,7 +127,7 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
                 <span className="font-semibold text-blue-600">4個</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-gray-600">使用技術</span>
+                <span className="text-gray-600">使用技術(AI利用)</span>
                 <span className="font-semibold text-purple-600">15+</span>
               </div>
               <div className="flex justify-between">

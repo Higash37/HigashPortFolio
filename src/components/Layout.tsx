@@ -45,7 +45,9 @@ const Layout = ({ children }: LayoutProps) => {
         )}
 
         {/* メインコンテンツ */}
-        <main className="flex-1 lg:ml-80 pt-20">{children}</main>
+        <main className="flex-1 lg:ml-80 pt-20">
+          <div className="max-w-7xl mx-auto px-4">{children}</div>
+        </main>
       </div>
     </div>
   );

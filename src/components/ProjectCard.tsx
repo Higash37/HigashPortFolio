@@ -40,7 +40,9 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 border-l-4 border-blue-500">
+    <div
+      className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 border-l-4 border-blue-500 h-full flex flex-col"
+    >
       <div className="flex items-start justify-between mb-4">
         <div className="flex items-center gap-3">
           <span className="text-2xl">{getIcon(project.type)}</span>
@@ -55,7 +57,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         </span>
       </div>
 
-      <p className="text-gray-600 mb-4 line-clamp-3">{project.description}</p>
+      <p className="text-gray-600 mb-4 line-clamp-3 flex-grow">{project.description}</p>
 
       <div className="flex flex-wrap gap-2 mb-4">
         {project.tech.map((tech, index) => (
@@ -68,23 +70,23 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         ))}
       </div>
 
-      <div className="flex gap-3">
+      <div className="flex gap-3 mt-auto pt-4 border-t border-gray-200">
         {project.link && (
           <a
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded text-sm transition-colors duration-200"
+            className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded text-sm transition-colors duration-200 w-full text-center"
           >
-            デモを見る
+            デモ/ソースを見る
           </a>
         )}
-        {project.github && (
+        {project.github && project.link !== project.github && (
           <a
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded text-sm transition-colors duration-200"
+            className="bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded text-sm transition-colors duration-200 w-full text-center"
           >
             GitHub
           </a>
