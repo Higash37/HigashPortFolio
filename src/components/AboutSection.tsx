@@ -18,23 +18,23 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="bg-white/10 rounded-lg p-8 backdrop-blur-sm">
-              <h3 className="text-2xl font-bold mb-4">💻 開発スタイル</h3>
+              <h3 className="text-2xl font-bold mb-4">🤖 AI学習ループ</h3>
               <ul className="space-y-3 text-purple-100">
                 <li className="flex items-center gap-3">
-                  <span className="text-yellow-300">✨</span>
-                  AIを活用したユーザーフレンドリーなUI/UXデザイン
+                  <span className="text-yellow-300">🔄</span>
+                  AIとペアコーディング→コード理解→実装→学習の繰り返し
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="text-yellow-300">🚀</span>
-                  パフォーマンスを重視した開発
+                  <span className="text-yellow-300">❓</span>
+                  セキュリティ対策やAI評価で四苦八苦中（改善方法を模索）
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="text-yellow-300">🔧</span>
-                  保守性の高いクリーンなコード
+                  <span className="text-yellow-300">🎯</span>
+                  業務改善の最適な１手段としてのコーディング習得が目標
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="text-yellow-300">📚</span>
-                  業務で求められる（自身が目指す）レベルに達するための継続的な学習と技術向上
+                  <span className="text-yellow-300">👥</span>
+                  人やチームの価値創造・ターニングポイントに強い関心
                 </li>
               </ul>
             </div>
@@ -42,45 +42,79 @@ const AboutSection = () => {
 
           <div>
             <div className="bg-white/10 rounded-lg p-8 backdrop-blur-sm">
-              <h3 className="text-2xl font-bold mb-4">🎯 得意分野</h3>
+              <h3 className="text-2xl font-bold mb-4">📈 現在の学習領域</h3>
               <div className="space-y-4 text-purple-100">
                 <div>
                   <h4 className="font-semibold text-white mb-2">
-                    Webアプリケーション開発
+                    業務改善からの発展
                   </h4>
                   <p className="text-sm">
-                    ReactとTypeScriptを使用したモダンなSPA開発
+                    Excelの関数利用 → 効率化の限界（技術的制約と環境的制約:
+                    マクロが禁止されているなど） → Webアプリ開発への転換点
                   </p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-white mb-2">
-                    モバイルアプリ開発
+                    AI支援による技術習得
                   </h4>
                   <p className="text-sm">
-                    React Nativeによるクロスプラットフォーム開発
+                    React/TypeScript基礎をAIとの対話で理解中。
+                    AIの回答を検証しながら学習している。
                   </p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-white mb-2">
-                    業務効率化ツール
+                    課題と向き合い中
                   </h4>
-                  <p className="text-sm">Excel VBAによる自動化とデータ分析</p>
+                  <p className="text-sm">
+                    セキュリティ設計やAIツール選定・評価手法の習得
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="text-center mt-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
+          <div className="bg-white/10 rounded-lg p-8 backdrop-blur-sm">
+            <h3 className="text-2xl font-bold mb-4">🎯 関心領域</h3>
+            <div className="space-y-4 text-purple-100">
+              <div>
+                <h4 className="font-semibold text-white mb-2">
+                  業務改善のターニングポイント
+                </h4>
+                <p className="text-sm">
+                  手作業→自動化→システム化への転換点を見極める過程に興味
+                </p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-white mb-2">
+                  人材・チーム価値の最大化
+                </h4>
+                <p className="text-sm">
+                  個人やチームが価値を発揮できる環境づくりと成長支援。決してコードといったシステムだけではなく、リーダーシップ・フォロワーシップといった人との繋がりなど
+                </p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-white mb-2">
+                  技術導入の意思決定
+                </h4>
+                <p className="text-sm">
+                  コスト・効果・リスクを総合的に判断した最適解の模索
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div className="bg-white/10 rounded-lg p-8 backdrop-blur-sm">
             <h3 className="text-2xl font-bold mb-4">📧 お問い合わせ</h3>
             <p className="text-purple-100 mb-6">
-              プロジェクトのご相談やお仕事のご依頼はお気軽にどうぞ
+              ご相談やご質問はお気軽にどうぞ。自身のプロダクト含めあまり批判出来ていないので、「こうした方がいいのでは」という意見を求めてます。
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col gap-4">
               <a
                 href="mailto:higashionna37@icloud.com"
-                className="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-purple-50 transition-colors duration-200"
+                className="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-purple-50 transition-colors duration-200 text-center"
               >
                 📧 メールで連絡
               </a>
@@ -88,7 +122,7 @@ const AboutSection = () => {
                 href="https://github.com/Higash37"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition-colors duration-200"
+                className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:text-white hover:font-bold hover:scale-105 transition-all duration-200 text-center"
               >
                 🔗 GitHub プロフィール
               </a>

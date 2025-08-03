@@ -10,9 +10,9 @@ interface SEOProps {
 }
 
 const SEO = ({
-  title = "東恩納良 ポートフォリオ - React / React Native / Excel VBA 開発者",
-  description = "React、React Native、Excel VBAを専門とするフルスタック開発者 東恩納良のポートフォリオサイト。Web・モバイル・業務効率化のソリューションを提供。",
-  keywords = "React, React Native, Excel VBA, フルスタック開発者, 東恩納良, Ryo Higashionna, ポートフォリオ, Web開発, モバイルアプリ開発, 業務効率化",
+  title = "東恩納良 ポートフォリオ - React / React Native / Excel 開発者",
+  description = "React、React Native、Excelを使う大学生 東恩納良のポートフォリオサイト。Web・モバイル・業務効率化のソリューションを提供。",
+  keywords = "React, React Native, Excel, 大学生, 東恩納良, Ryo Higashionna, ポートフォリオ, Web開発, モバイルアプリ開発, 業務効率化",
   image = "/icon-512.svg",
   url = "https://ryo-higashionna-portfolio.vercel.app",
   type = "website",
@@ -73,7 +73,7 @@ const SEO = ({
       "@type": "Person",
       name: "東恩納良",
       alternateName: "Ryo Higashionna",
-      jobTitle: "フルスタック開発者",
+      jobTitle: "大学生",
       description: description,
       url: url,
       image: image,

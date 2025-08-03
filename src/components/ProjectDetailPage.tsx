@@ -125,9 +125,7 @@ const PortfolioDetail = () => {
                       Tailwind CSS
                     </span>
                   </div>
-                  <p className="text-green-600 text-sm">
-                    モダンで美しいデザイン
-                  </p>
+                  <p className="text-green-600 text-sm">モダンなデザイン</p>
                 </div>
                 <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-4 border-l-4 border-purple-500">
                   <div className="flex items-center mb-2">
@@ -136,9 +134,6 @@ const PortfolioDetail = () => {
                       PWA対応
                     </span>
                   </div>
-                  <p className="text-purple-600 text-sm">
-                    オフライン閲覧も可能
-                  </p>
                 </div>
               </div>
             </div>
@@ -195,8 +190,8 @@ const ShiftizeDetail = () => {
           シフト管理アプリ「Shiftize」
         </h1>
         <p className="text-gray-500 mb-6">
-          React
-          Nativeで開発した直感的なシフト管理アプリ。リアルタイム通知、スケジュール調整機能を実装。
+          React Nativeで開発した直感的なシフト管理アプリ。
+          スケジュール調整機能を実装。
         </p>
         <SubHeaderTabs activeTab={activeTab} setActiveTab={setActiveTab} />
         <div className="mt-8">

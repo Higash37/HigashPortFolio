@@ -4,8 +4,12 @@ const Header = () => {
       <div className="max-w-5xl mx-auto px-4 py-16">
         <div className="text-center">
           <div className="mb-6">
-            <div className="w-32 h-32 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
-              <span className="text-6xl">👨‍💻</span>
+            <div className="w-32 h-32 bg-white rounded-full mx-auto mb-4 overflow-hidden">
+              <img
+                src="/Higash.jpg"
+                alt="東恩納 良"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
@@ -15,23 +19,23 @@ const Header = () => {
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-blue-100 mb-4">
-            AIを活用し、ビジネス課題の解決に挑む課題解決型コンサルタント
+            AI学習ループで成長中｜業務改善からコーディングへのターニングポイント探求者
           </p>
           <p className="text-md md:text-lg text-blue-200 mb-8 max-w-3xl mx-auto">
-            コーディングは目的ではなく、ビジネスを前進させるための手段です。AIとの協業により、本質的な課題特定と高速なソリューション実現に集中します。
+            AIとペアコーディングしながらコードの仕組みを学習中です。業務効率化の過程でコーディングに辿り着き、将来的には最適な改善手段として使いこなせる人材を目指しています。人やチームの価値創造に強い関心があります。
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href="#philosophy"
-              className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-200"
+              className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:text-white hover:font-bold hover:scale-105 transition-all duration-200"
             >
-              💡 私の開発哲学
+              🔄 AI学習ループとは
             </a>
             <a
               href="#projects"
-              className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-200"
+              className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:text-white hover:font-bold hover:scale-105 transition-all duration-200"
             >
-              📂 ケーススタディ
+              🛠️ プロダクトについて
             </a>
             <a
               href="https://github.com/Higash37"
@@ -39,7 +43,7 @@ const Header = () => {
               rel="noopener noreferrer"
               className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200"
             >
-              🔗 GitHub を見る
+              📚 github
             </a>
           </div>
         </div>

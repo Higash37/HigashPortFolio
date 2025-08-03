@@ -1,7 +1,7 @@
 {
   "name": "東恩納良 ポートフォリオ",
   "short_name": "東恩納良",
-  "description": "React、React Native、Excel VBAを専門とするフルスタック開発者のポートフォリオサイト",
+  "description": "React、React Native、Excel VBAを専門とする開発者のポートフォリオサイト",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -9,21 +9,15 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/vite.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
+      "src": "/icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/icon-192.svg",
-      "sizes": "192x192",
-      "type": "image/svg+xml",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "/icon-512.svg",
+      "src": "/icon.png",
       "sizes": "512x512",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "maskable any"
     }
   ],

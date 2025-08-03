@@ -7,47 +7,38 @@ const projects = [
     description:
       "React + TypeScript + Tailwind CSSで開発したレスポンシブなポートフォリオサイト。モダンなデザインと滑らかなアニメーションが特徴。PWA対応でオフライン閲覧も可能。",
     tech: ["React", "TypeScript", "Tailwind CSS", "Vite", "PWA"],
-    link: "https://github.com/Higash37",
-    github: "https://github.com/Higash37",
+    link: "https://my-portfolio-cyan-five-73.vercel.app/",
+    github: "https://github.com/Higash37/HigashPortFolio",
     type: "web" as const,
   },
   {
     id: "2",
     title: "シフト管理アプリ「Shiftize」",
     description:
-      "React Nativeで開発したシフト管理アプリ。直感的なUI、リアルタイム通知、スケジュール調整機能を実装。個人開発で3ヶ月で完成。",
+      "React Nativeで開発したシフト管理アプリ。直感的なUI、授業時間とスタッフ時間という別管理スケジュール調整機能を実装。個人開発で3ヶ月で完成。",
     tech: ["React Native", "TypeScript", "Expo", "Firebase", "Zustand"],
-    github: "https://github.com/Higash37",
+    link: "https://shift-scheduler-app-vu6i.onrender.com/welcome",
+    github: "https://github.com/Higash37/Shiftize",
     type: "mobile" as const,
   },
   {
     id: "3",
-    title: "自動反映シフトガントチャートExcelシート",
-    description:
-      "VBAやマクロを一切使わず、関数と条件付き書式のみで実現したシフトガントチャート。現場のITリテラシーが低くても安心して使える。",
-    tech: ["Excel", "関数のみ", "条件付き書式"],
-    link: "https://github.com/Higash37/shift-gantt-excel",
-    github: "https://github.com/Higash37/shift-gantt-excel",
-    type: "excel" as const,
-  },
-  {
-    id: "4",
     title: "「Shiftize」のポートフォリオサイト",
     description:
       "シフト管理アプリ「Shiftize」の専用ポートフォリオサイト。アプリの機能紹介、デモ、ダウンロードリンクを提供。モダンなランディングページデザイン。",
     tech: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Vite"],
-    link: "https://github.com/Higash37",
+    link: "https://shift-scheduler-app-vu6i.onrender.com/(landing)",
     github: "https://github.com/Higash37",
     type: "web" as const,
   },
   {
-    id: "5",
+    id: "4",
     title: "AIでアンケートを生成するサイト",
     description:
       "AI技術を活用してアンケートを自動生成するWebアプリケーション。自然言語での指示から最適な質問項目を提案。回答分析機能も搭載。",
     tech: ["React", "TypeScript", "OpenAI API", "Node.js", "MongoDB"],
-    link: "https://github.com/Higash37",
-    github: "https://github.com/Higash37",
+    link: "https://kaikaihatsu-ai.vercel.app/",
+    github: "https://github.com/Higash37/Kaikaihatsu_AI",
     type: "web" as const,
   },
 ];

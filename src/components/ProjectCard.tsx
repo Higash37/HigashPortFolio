@@ -45,7 +45,27 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
     >
       <div className="flex items-start justify-between mb-4">
         <div className="flex items-center gap-3">
-          <span className="text-2xl">{getIcon(project.type)}</span>
+          {project.title === "ポートフォリオサイト" ? (
+            <img 
+              src="/icon.png" 
+              alt="ポートフォリオ" 
+              className="w-8 h-8 rounded-full"
+            />
+          ) : project.title.includes("Shiftize") ? (
+            <img 
+              src="/ShiftizeIcon.png" 
+              alt="Shiftize" 
+              className="w-8 h-8 rounded-full"
+            />
+          ) : project.title.includes("AIでアンケート") ? (
+            <img 
+              src="/SciscitorAI.png" 
+              alt="Sciscitor AI" 
+              className="w-8 h-8 rounded-full"
+            />
+          ) : (
+            <span className="text-2xl">{getIcon(project.type)}</span>
+          )}
           <h3 className="text-xl font-bold text-gray-800">{project.title}</h3>
         </div>
         <span
@@ -70,25 +90,25 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         ))}
       </div>
 
-      <div className="flex gap-3 mt-auto pt-4 border-t border-gray-200">
+      <div className="flex gap-2 mt-auto pt-4 border-t border-gray-200">
         {project.link && (
           <a
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded text-sm transition-colors duration-200 w-full text-center"
+            className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-2 rounded text-sm transition-colors duration-200 flex-1 text-center"
           >
-            デモ/ソースを見る
+            🚀 アプリを開く
           </a>
         )}
-        {project.github && project.link !== project.github && (
+        {project.github && (
           <a
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded text-sm transition-colors duration-200 w-full text-center"
+            className="bg-gray-800 hover:bg-gray-900 text-white px-3 py-2 rounded text-sm transition-colors duration-200 flex-1 text-center"
           >
-            GitHub
+            📚 ソースを見る
           </a>
         )}
       </div>

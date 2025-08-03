@@ -13,10 +13,10 @@ const Footer = () => {
               東恩納 良 | Ryo Higashionna
             </h3>
             <p className="text-gray-400">
-              フルスタック開発者 | 神奈川県川崎市在住
+              AI学習中 | 業務改善志向 | 神奈川県川崎市在住
             </p>
             <p className="text-gray-400 text-sm mt-1">
-              AIを用いたWeb・モバイル・業務効率化のソリューションを提供
+              コーディングを手段とした業務改善・効率化の最適解を探求中
             </p>
           </div>
 
@@ -27,13 +27,13 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center gap-2"
             >
-              <span>📱</span> GitHub
+              <span>📚</span> 学習記録
             </a>
             <a
               href="mailto:higashionna37@icloud.com"
               className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center gap-2"
             >
-              <span>✉️</span> Email
+              <span>💬</span> 相談メール
             </a>
           </div>
         </div>
@@ -42,7 +42,7 @@ const Footer = () => {
           <p className="text-gray-400">
             © {currentYear} Ryo Higashionna. All rights reserved. |
             <span className="ml-2">
-              🚀 Built with React + TypeScript + Tailwind CSS
+              🤖 AI支援で学習中 | React + TypeScript + Tailwind CSS
             </span>
           </p>
         </div>

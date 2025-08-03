@@ -9,35 +9,39 @@ const NavigationHeader = ({ onMenuToggle }: NavigationHeaderProps) => {
         <div className="flex items-center justify-between h-20">
           {/* ロゴ・タイトル */}
           <div className="flex items-center gap-3">
-            <span className="text-xl">👨‍💻</span>
-            <span className="font-bold text-lg">東恩納 良ポートフォリオ</span>
+            <img 
+              src="/icon.png" 
+              alt="東恩納良" 
+              className="w-8 h-8 rounded-full"
+            />
+            <span className="font-bold text-lg">AI学習ループ | 東恩納良</span>
           </div>
 
           {/* ナビゲーションメニュー - PC版では非表示 */}
           <div className="hidden xl:flex items-center gap-6 ">
             <a
               href="#projects"
-              className="hover:bg-blue-700 text-white px-3 py-2 rounded transition-colors duration-200"
+              className="text-white px-3 py-2 rounded hover:font-bold hover:scale-105 transition-all duration-200"
             >
-              プロジェクト
+              改善事例
             </a>
             <a
               href="#skills"
-              className="hover:bg-blue-700 text-white px-3 py-2 rounded transition-colors duration-200"
+              className="text-white px-3 py-2 rounded hover:font-bold hover:scale-105 transition-all duration-200"
             >
-              スキル
+              学習領域
             </a>
             <a
               href="#about"
-              className="hover:bg-blue-700 text-white px-3 py-2 rounded transition-colors duration-200"
+              className="text-white px-3 py-2 rounded hover:font-bold hover:scale-105 transition-all duration-200"
             >
-              自己紹介
+              関心・将来像
             </a>
             <a
               href="#contact"
-              className="hover:bg-blue-700 text-white px-3 py-2  rounded transition-colors duration-200"
+              className="text-white px-3 py-2 rounded hover:font-bold hover:scale-105 transition-all duration-200"
             >
-              お問い合わせ
+              相談・連絡
             </a>
           </div>
 
@@ -49,13 +53,13 @@ const NavigationHeader = ({ onMenuToggle }: NavigationHeaderProps) => {
               rel="noopener noreferrer"
               className="bg-white text-blue-600 px-4 py-2 rounded text-sm font-semibold hover:bg-blue-50 transition-colors duration-200"
             >
-              GitHub
+              学習記録
             </a>
             <a
               href="mailto:higashionna37@icloud.com"
               className="bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded text-sm font-semibold transition-colors duration-200"
             >
-              お問い合わせ
+              相談メール
             </a>
           </div>
 

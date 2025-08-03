@@ -22,25 +22,24 @@ const skills = [
         name: "React",
         icon: <FaReact className="text-blue-500" />,
         description:
-          "コンポーネントベースの設計思想に基づき、再利用性が高く保守しやすいUIを構築します。単なるUIライブラリとしてではなく、アプリケーションの状態管理やロジック分離まで含めた最適な設計を常に意識しています。",
+          "コンポーネントベースの設計思想に基づき、再利用性が高く保守しやすいUIを構築することを目指しています。単なるUIライブラリとしてではなく、アプリケーションの状態管理やロジック分離まで含めた最適な設計を常に意識しているところです。",
       },
       {
         name: "TypeScript",
         icon: <SiTypescript className="text-blue-600" />,
         description:
-          "静的型付けによる型安全な開発を基本としています。大規模なアプリケーションでもコードの品質を保ち、リファクタリングを容易にするTypeScriptの恩恵を最大限に活用します。",
+          "静的型付けによる型安全な開発を基本としています。安全性を意識する思想が非常に関心があるところです。",
       },
       {
         name: "JavaScript",
         icon: <FaJs className="text-yellow-500" />,
         description:
-          "ES6+のモダンな構文を理解し、非同期処理や関数型プログラミングの概念を活用して、可読性と効率性の高いコードを書くことができます。",
+          "ES6+のモダンな構文を理解し、非同期処理や関数型プログラミングの概念を活用して、可読性と効率性の高いコードを書くことを目指しています。",
       },
       {
         name: "Tailwind CSS",
         icon: <SiTailwindcss className="text-teal-500" />,
-        description:
-          "ユーティリティファーストのアプローチにより、CSSの肥大化を防ぎながら、迅速かつ整合性の取れたUIデザインを実現します。デザインシステムに基づいたテーマ設定も可能です。",
+        description: "デザインシステムに基づいたテーマ設定が好きです。",
       },
     ],
     icon: "🎨",
@@ -52,13 +51,13 @@ const skills = [
         name: "React Native",
         icon: <FaMobile className="text-blue-500" />,
         description:
-          "Webの技術スタックを活かし、iOSとAndroidの両プラットフォームに対応したクロスプラットフォームアプリを開発します。ネイティブ機能との連携も可能です。",
+          "Webの技術スタックを活かし、iOSとAndroidの両プラットフォームに対応したクロスプラットフォームアプリを開発しています。ネイティブアプリとしての開発も本格的にしたいところです。",
       },
       {
         name: "Expo",
         icon: <SiExpo className="text-black" />,
         description:
-          "ビルドやデプロイの複雑さを抽象化し、開発体験を向上させるExpoの利用経験が豊富です。OTAアップデートによる迅速なバグ修正も可能です。",
+          "Expoを用いて、ビルドやデプロイの複雑さを抽象化し、開発体験を向上させることを目指しています。",
       },
     ],
     icon: "📱",
@@ -69,14 +68,13 @@ const skills = [
       {
         name: "Node.js",
         icon: <FaNode className="text-green-600" />,
-        description:
-          "フロントエンドと親和性の高いNode.jsを用いて、スケーラブルなAPIサーバーを構築します。Express.jsと組み合わせたREST APIの開発が得意です。",
+        description: "あまり内部がよく理解出来ていないと日々思っています。",
       },
       {
         name: "Firebase",
         icon: <SiFirebase className="text-orange-500" />,
         description:
-          "認証、データベース（Firestore）、ストレージ、ホスティングなど、BaaSとしてのFirebaseをフル活用し、サーバーレスアーキテクチャで迅速にサービスを立ち上げることができます。",
+          "認証、データベース（Firestore）、ストレージ、ホスティングなど、BaaSとしてのFirebaseをフル活用し、サーバーレスアーキテクチャで迅速にサービスを立ち上げられる点が楽です。",
       },
     ],
     icon: "⚙️",
@@ -88,13 +86,13 @@ const skills = [
         name: "Git",
         icon: <FaGitAlt className="text-orange-600" />,
         description:
-          "バージョン管理の必須ツールとして、基本的なコマンドからブランチ戦略まで理解しています。GitHub Flowに基づいたチーム開発経験があります。",
+          "バージョン管理の必須ツールとして、基本的なコマンドは理解したいところです。",
       },
       {
-        name: "Excel VBA",
+        name: "Excel関数・マクロ",
         icon: <FaTable className="text-green-600" />,
         description:
-          "多くの企業で現役で利用されているExcelの自動化ニーズに応えます。複雑な手作業をマクロで自動化し、業務効率を劇的に改善した経験が豊富です。",
+          "マクロ・VBAは働いていたアルバイト先で使っていなかったこともあり、そこまで詳しくないです。関数でどう実現するかをよく考えていました。",
       },
     ],
     icon: "🛠️",
@@ -111,10 +109,11 @@ const SkillsSection = ({ onCardClick }: SkillsSectionProps) => {
       <div className="max-w-5xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            スキル・技術
+            利用したことのあるスキル・技術
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            各技術要素をクリックすると、私の考えや経験についての詳細が表示されます。
+            基本的にAIでコーディングしているため、コーディングしてからそのコードを基に学習しています。
+            そのライブラリが他とどう違うのかなどを比較し、それぞれの強みを理解していくことが非常に好きです。
           </p>
         </div>
 
