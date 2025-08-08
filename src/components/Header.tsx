@@ -19,7 +19,7 @@ const Header = () => {
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-blue-100 mb-4">
-            AI学習ループで成長中｜業務改善からコーディングへのターニングポイント探求者
+            AIとペアコーディングしながらコードの仕組みを学習中
           </p>
           <p className="text-md md:text-lg text-blue-200 mb-8 max-w-3xl mx-auto">
             AIとペアコーディングしながらコードの仕組みを学習中です。業務効率化の過程でコーディングに辿り着き、将来的には最適な改善手段として使いこなせる人材を目指しています。人やチームの価値創造に強い関心があります。
@@ -29,7 +29,7 @@ const Header = () => {
               href="#philosophy"
               className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:text-white hover:font-bold hover:scale-105 transition-all duration-200"
             >
-              🔄 AI学習ループとは
+              🔄 AI学習とペアコーディング
             </a>
             <a
               href="#projects"
