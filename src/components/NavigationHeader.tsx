@@ -9,12 +9,12 @@ const NavigationHeader = ({ onMenuToggle }: NavigationHeaderProps) => {
         <div className="flex items-center justify-between h-20">
           {/* ロゴ・タイトル */}
           <div className="flex items-center gap-3">
-            <img 
-              src="/icon.png" 
-              alt="東恩納良" 
+            <img
+              src="/icon.png"
+              alt="東恩納良"
               className="w-8 h-8 rounded-full"
             />
-            <span className="font-bold text-lg">AI学習ループ | 東恩納良</span>
+            <span className="font-bold text-lg">AI学習 | 東恩納良</span>
           </div>
 
           {/* ナビゲーションメニュー - PC版では非表示 */}

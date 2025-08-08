@@ -18,7 +18,7 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="bg-white/10 rounded-lg p-8 backdrop-blur-sm">
-              <h3 className="text-2xl font-bold mb-4">🤖 AI学習ループ</h3>
+              <h3 className="text-2xl font-bold mb-4">🤖 AI学習</h3>
               <ul className="space-y-3 text-purple-100">
                 <li className="flex items-center gap-3">
                   <span className="text-yellow-300">🔄</span>
