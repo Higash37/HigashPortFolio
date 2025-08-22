@@ -17,11 +17,11 @@ const Header = () => {
     visible: {
       y: 0,
       opacity: 1,
-      transition: {
-        duration: 0.8,
-        ease: [0.25, 0.25, 0.25, 0.75],
-      },
     },
+  };
+
+  const itemTransition = {
+    duration: 0.8,
   };
 
   return (
@@ -33,7 +33,7 @@ const Header = () => {
           initial="hidden"
           animate="visible"
         >
-          <motion.div className="mb-6" variants={itemVariants}>
+          <motion.div className="mb-6" variants={itemVariants} transition={itemTransition}>
             <motion.div 
               className="w-32 h-32 bg-white rounded-full mx-auto mb-4 overflow-hidden"
               whileHover={{ scale: 1.1, rotate: 5 }}
@@ -49,6 +49,7 @@ const Header = () => {
           <motion.h1 
             className="text-4xl md:text-6xl font-bold mb-4"
             variants={itemVariants}
+            transition={itemTransition}
           >
             東恩納 良
             <motion.span 
@@ -63,18 +64,21 @@ const Header = () => {
           <motion.p 
             className="text-xl md:text-2xl text-blue-100 mb-4"
             variants={itemVariants}
+            transition={itemTransition}
           >
             AI学習ループで成長中｜業務改善からコーディングへのターニングポイント探求者
           </motion.p>
           <motion.p 
             className="text-md md:text-lg text-blue-200 mb-8 max-w-3xl mx-auto"
             variants={itemVariants}
+            transition={itemTransition}
           >
             AIとペアコーディングしながらコードの仕組みを学習中です。業務効率化の過程でコーディングに辿り着き、将来的には最適な改善手段として使いこなせる人材を目指しています。人やチームの価値創造に強い関心があります。
           </motion.p>
           <motion.div 
             className="flex flex-wrap justify-center gap-4"
             variants={itemVariants}
+            transition={itemTransition}
           >
             <motion.a
               href="#story"
