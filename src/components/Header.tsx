@@ -23,7 +23,6 @@ const Header = () => {
   const itemTransition = {
     duration: 0.8,
   };
-
   return (
     <header className="bg-gradient-to-r from-blue-600 to-purple-600 text-white relative z-10 w-full">
       <div className="max-w-5xl mx-auto px-4 py-16">

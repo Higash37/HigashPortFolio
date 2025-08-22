@@ -33,7 +33,6 @@ const AnimatedSection = ({
     duration: 0.8,
     delay: delay,
   };
-
   return (
     <motion.div
       className={className}
