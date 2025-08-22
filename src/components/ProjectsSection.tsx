@@ -17,7 +17,7 @@ const projects = [
     description:
       "React Nativeで開発したシフト管理アプリ。直感的なUI、授業時間とスタッフ時間という別管理スケジュール調整機能を実装。個人開発で3ヶ月で完成。",
     tech: ["React Native", "TypeScript", "Expo", "Firebase", "Zustand"],
-    link: "https://shift-scheduler-app-vu6i.onrender.com/welcome",
+    link: "https://shift-scheduler-app-vu6i.onrender.com",
     github: "https://github.com/Higash37/Shiftize",
     type: "mobile" as const,
   },
@@ -27,7 +27,7 @@ const projects = [
     description:
       "シフト管理アプリ「Shiftize」の専用ポートフォリオサイト。アプリの機能紹介、デモ、ダウンロードリンクを提供。モダンなランディングページデザイン。",
     tech: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Vite"],
-    link: "https://shift-scheduler-app-vu6i.onrender.com/(landing)",
+    link: "https://shift-scheduler-app-vu6i.onrender.com/home",
     github: "https://github.com/Higash37",
     type: "web" as const,
   },
@@ -57,8 +57,8 @@ const ProjectsSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+          {projects.map((project, index) => (
+            <ProjectCard key={project.id} project={project} index={index} />
           ))}
         </div>
       </div>
