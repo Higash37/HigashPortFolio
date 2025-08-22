@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 
 interface AnimatedSectionProps {
   children: ReactNode;
@@ -26,14 +26,13 @@ const AnimatedSection = ({
       y: 0,
       x: 0,
       scale: 1,
-      transition: {
-        duration: 0.8,
-        delay: delay,
-        ease: [0.25, 0.25, 0.25, 0.75], // カスタムイージング
-      },
     },
   };
 
+  const transition = {
+    duration: 0.8,
+    delay: delay,
+  };
   return (
     <motion.div
       className={className}
@@ -41,6 +40,7 @@ const AnimatedSection = ({
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
       variants={variants}
+      transition={transition}
     >
       {children}
     </motion.div>
