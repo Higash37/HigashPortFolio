@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 interface Project {
   id: string;
   title: string;
@@ -10,9 +12,10 @@ interface Project {
 
 interface ProjectCardProps {
   project: Project;
+  index?: number;
 }
 
-const ProjectCard = ({ project }: ProjectCardProps) => {
+const ProjectCard = ({ project, index = 0 }: ProjectCardProps) => {
   const getIcon = (type: string) => {
     switch (type) {
       case "web":
@@ -40,8 +43,19 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
   };
 
   return (
-    <div
-      className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 border-l-4 border-blue-500 h-full flex flex-col"
+    <motion.div
+      className="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-500 h-full flex flex-col"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.6, delay: index * 0.1 }}
+      whileHover={{ 
+        y: -8,
+        scale: 1.02,
+        boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+        transition: { duration: 0.3 }
+      }}
+      whileTap={{ scale: 0.98 }}
     >
       <div className="flex items-start justify-between mb-4">
         <div className="flex items-center gap-3">
@@ -112,7 +126,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           </a>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
