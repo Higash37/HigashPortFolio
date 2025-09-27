@@ -26,11 +26,11 @@ const AboutSection = () => {
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="text-yellow-300">❓</span>
-                  セキュリティ対策やAI評価で四苦八苦中（改善方法を模索）
+                  セキュリティ対策やニーズの把握で四苦八苦中（改善方法を模索）
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="text-yellow-300">🎯</span>
-                  業務改善の最適な１手段としてのコーディング習得が目標
+                  業務改善の最適な1手段としてのコーディング習得が目標
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="text-yellow-300">👥</span>

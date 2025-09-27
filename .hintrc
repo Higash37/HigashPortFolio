@@ -18,6 +18,14 @@
       {
         "nested-interactive": "off"
       }
+    ],
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "meta[name=theme-color]"
+        ]
+      }
     ]
   },
   "browserslist": [

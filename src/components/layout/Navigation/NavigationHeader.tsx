@@ -10,7 +10,7 @@ const NavigationHeader = ({ onMenuToggle }: NavigationHeaderProps) => {
           {/* ロゴ・タイトル */}
           <div className="flex items-center gap-3">
             <img
-              src="/icon.png"
+              src="/icons/icon.png"
               alt="東恩納良"
               className="w-8 h-8 rounded-full"
             />
