@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import NavigationHeader from "./NavigationHeader";
-import Sidebar from "./Sidebar";
-import SkeletonLoader from "./SkeletonLoader";
+import NavigationHeader from "./Navigation/NavigationHeader";
+import Sidebar from "./Navigation/Sidebar";
+import SkeletonLoader from "../ui/Loading/SkeletonLoader";
 
 interface LayoutProps {
   children: React.ReactNode;

@@ -12,7 +12,7 @@ import {
   SiExpo,
   SiFirebase,
 } from "react-icons/si";
-import type { ModalContent } from "../App";
+import type { ModalContent } from "../../../app/App";
 
 const skills = [
   {

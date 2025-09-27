@@ -1,20 +1,28 @@
 import { useState, useEffect, lazy, Suspense } from "react";
 import { motion } from "framer-motion";
-import Layout from "./components/Layout";
-import SkeletonLoader from "./components/SkeletonLoader";
-import PWAInstaller from "./components/PWAInstaller";
-import SEO from "./components/SEO";
-import Modal from "./components/Modal";
-import "./App.css";
+import Layout from "../components/layout/Layout";
+import SkeletonLoader from "../components/ui/Loading/SkeletonLoader";
+import PWAInstaller from "../components/features/PWA/PWAInstaller";
+import SEO from "../components/features/SEO/SEO";
+import Modal from "../components/ui/Modal/Modal";
+import "../styles/App.css";
 
 // Lazy load components for better performance
-const Header = lazy(() => import("./components/Header"));
-const DevelopmentPhilosophy = lazy(() => import("./components/DevelopmentPhilosophy"));
-const MyStory = lazy(() => import("./components/MyStory"));
-const ProjectsSection = lazy(() => import("./components/ProjectsSection"));
-const SkillsSection = lazy(() => import("./components/SkillsSection"));
-const AboutSection = lazy(() => import("./components/AboutSection"));
-const Footer = lazy(() => import("./components/Footer"));
+const Header = lazy(() => import("../components/layout/Header/Header"));
+const DevelopmentPhilosophy = lazy(
+  () => import("../components/sections/Philosophy/DevelopmentPhilosophy")
+);
+const MyStory = lazy(() => import("../components/sections/Story/MyStory"));
+const ProjectsSection = lazy(
+  () => import("../components/sections/ProjectsSection")
+);
+const SkillsSection = lazy(
+  () => import("../components/sections/Skills/SkillsSection")
+);
+const AboutSection = lazy(
+  () => import("../components/sections/About/AboutSection")
+);
+const Footer = lazy(() => import("../components/layout/Footer/Footer"));
 
 export interface ModalContent {
   title: string;
@@ -60,18 +68,23 @@ function App() {
   useEffect(() => {
     const loadSections = async () => {
       const sections: (keyof LoadedSections)[] = [
-        'header', 'story', 'philosophy', 'projects', 
-        'skills', 'about', 'footer'
+        "header",
+        "story",
+        "philosophy",
+        "projects",
+        "skills",
+        "about",
+        "footer",
       ];
-      
+
       const delays = [500, 400, 400, 400, 300, 300, 200];
-      
+
       for (let i = 0; i < sections.length; i++) {
         await new Promise((resolve) => setTimeout(resolve, delays[i]));
         setLoadedSections((prev) => ({ ...prev, [sections[i]]: true }));
       }
     };
-    
+
     loadSections();
   }, []);
 
@@ -158,7 +171,7 @@ function App() {
       <Layout>
         <SEO />
         <PWAInstaller />
-        
+
         {/* Header Section */}
         <Suspense fallback={skeletons.header}>
           {loadedSections.header ? <Header /> : skeletons.header}

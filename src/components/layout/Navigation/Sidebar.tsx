@@ -27,9 +27,9 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
           {/* サイドバーヘッダー */}
           <div className="flex items-center justify-between mb-6 lg:justify-center">
             <div className="flex items-center gap-2">
-              <img 
-                src="/icon.png" 
-                alt="東恩納良" 
+              <img
+                src="/icons/icon.png"
+                alt="東恩納良"
                 className="w-6 h-6 rounded-full"
               />
               <h2 className="text-lg font-bold text-gray-800">メニュー</h2>
@@ -46,9 +46,9 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
           <div className="bg-white rounded-lg p-4 mb-6 shadow-sm">
             <div className="flex items-center gap-3 mb-3">
               <div className="w-12 h-12 bg-blue-100 rounded-full overflow-hidden">
-                <img 
-                  src="/Higash.jpg" 
-                  alt="東恩納 良" 
+                <img
+                  src="/images/profile/Higash.jpg"
+                  alt="東恩納 良"
                   className="w-full h-full object-cover"
                 />
               </div>
