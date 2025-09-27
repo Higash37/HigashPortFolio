@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import Layout from "./Layout";
+import Layout from "../../layout/Layout";
 import {
   FaUserClock,
   FaChartBar,

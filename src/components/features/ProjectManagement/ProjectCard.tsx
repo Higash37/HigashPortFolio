@@ -49,32 +49,32 @@ const ProjectCard = ({ project, index = 0 }: ProjectCardProps) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
-      whileHover={{ 
+      whileHover={{
         y: -8,
         scale: 1.02,
         boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
-        transition: { duration: 0.3 }
+        transition: { duration: 0.3 },
       }}
       whileTap={{ scale: 0.98 }}
     >
       <div className="flex items-start justify-between mb-4">
         <div className="flex items-center gap-3">
           {project.title === "ポートフォリオサイト" ? (
-            <img 
-              src="/icon.png" 
-              alt="ポートフォリオ" 
+            <img
+              src="/icons/icon.png"
+              alt="ポートフォリオ"
               className="w-8 h-8 rounded-full"
             />
           ) : project.title.includes("Shiftize") ? (
-            <img 
-              src="/ShiftizeIcon.png" 
-              alt="Shiftize" 
+            <img
+              src="/images/projects/ShiftizeIcon.png"
+              alt="Shiftize"
               className="w-8 h-8 rounded-full"
             />
           ) : project.title.includes("AIでアンケート") ? (
-            <img 
-              src="/SciscitorAI.png" 
-              alt="Sciscitor AI" 
+            <img
+              src="/images/projects/SciscitorAI.png"
+              alt="Sciscitor AI"
               className="w-8 h-8 rounded-full"
             />
           ) : (
@@ -91,7 +91,9 @@ const ProjectCard = ({ project, index = 0 }: ProjectCardProps) => {
         </span>
       </div>
 
-      <p className="text-gray-600 mb-4 line-clamp-3 flex-grow">{project.description}</p>
+      <p className="text-gray-600 mb-4 line-clamp-3 flex-grow">
+        {project.description}
+      </p>
 
       <div className="flex flex-wrap gap-2 mb-4">
         {project.tech.map((tech, index) => (
