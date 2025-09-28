@@ -1,28 +1,28 @@
 import { useState, useEffect, lazy, Suspense } from "react";
 import { motion } from "framer-motion";
 import Layout from "../components/layout/Layout";
-import SkeletonLoader from "../components/ui/Loading/SkeletonLoader";
-import PWAInstaller from "../components/features/PWA/PWAInstaller";
-import SEO from "../components/features/SEO/SEO";
-import Modal from "../components/ui/Modal/Modal";
+import SkeletonLoader from "../components/ui/loading/SkeletonLoader";
+import PWAInstaller from "../components/features/pwa/PWAInstaller";
+import SEO from "../components/features/seo/SEO";
+import Modal from "../components/ui/modal/Modal";
 import "../styles/App.css";
 
 // Lazy load components for better performance
-const Header = lazy(() => import("../components/layout/Header/Header"));
+const Header = lazy(() => import("../components/layout/header/Header"));
 const DevelopmentPhilosophy = lazy(
-  () => import("../components/sections/Philosophy/DevelopmentPhilosophy")
+  () => import("../components/sections/philosophy/DevelopmentPhilosophy")
 );
-const MyStory = lazy(() => import("../components/sections/Story/MyStory"));
+const MyStory = lazy(() => import("../components/sections/story/MyStory"));
 const ProjectsSection = lazy(
-  () => import("../components/sections/ProjectsSection")
+  () => import("../components/sections/projects/ProjectsSection")
 );
 const SkillsSection = lazy(
-  () => import("../components/sections/Skills/SkillsSection")
+  () => import("../components/sections/skills/SkillsSection")
 );
 const AboutSection = lazy(
-  () => import("../components/sections/About/AboutSection")
+  () => import("../components/sections/about/AboutSection")
 );
-const Footer = lazy(() => import("../components/layout/Footer/Footer"));
+const Footer = lazy(() => import("../components/layout/footer/Footer"));
 
 export interface ModalContent {
   title: string;
@@ -166,7 +166,7 @@ function App() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 0.4 }}
     >
       <Layout>
         <SEO />
