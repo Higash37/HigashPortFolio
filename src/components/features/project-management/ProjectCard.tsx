@@ -1,14 +1,5 @@
 import { motion } from "framer-motion";
-
-interface Project {
-  id: string;
-  title: string;
-  description: string;
-  tech: string[];
-  link?: string;
-  github?: string;
-  type: "web" | "mobile" | "excel" | "other";
-}
+import type { Project } from "../../../types";
 
 interface ProjectCardProps {
   project: Project;
@@ -107,9 +98,9 @@ const ProjectCard = ({ project, index = 0 }: ProjectCardProps) => {
       </div>
 
       <div className="flex gap-2 mt-auto pt-4 border-t border-gray-200">
-        {project.link && (
+        {project.demoUrl && (
           <a
-            href={project.link}
+            href={project.demoUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-2 rounded text-sm transition-colors duration-200 flex-1 text-center"
@@ -117,9 +108,9 @@ const ProjectCard = ({ project, index = 0 }: ProjectCardProps) => {
             🚀 アプリを開く
           </a>
         )}
-        {project.github && (
+        {project.githubUrl && (
           <a
-            href={project.github}
+            href={project.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gray-800 hover:bg-gray-900 text-white px-3 py-2 rounded text-sm transition-colors duration-200 flex-1 text-center"

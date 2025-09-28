@@ -1,5 +1,5 @@
 import { FaRobot, FaTachometerAlt, FaUserTie } from "react-icons/fa";
-import type { ModalContent } from "../../../app/App";
+import type { ModalContent } from "../../../types";
 
 interface PhilosophyCardProps {
   onCardClick: (content: ModalContent) => void;

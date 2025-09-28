@@ -1,0 +1,47 @@
+/* 文字体系ユーティリティ */
+
+/* フォントサイズ系統 */
+.text-display {
+  @apply text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight;
+}
+
+.text-heading {
+  @apply text-2xl sm:text-3xl lg:text-4xl font-semibold leading-snug;
+}
+
+.text-subheading {
+  @apply text-xl sm:text-2xl font-medium leading-relaxed;
+}
+
+.text-body {
+  @apply text-base sm:text-lg leading-relaxed;
+}
+
+.text-caption {
+  @apply text-sm text-gray-600 leading-normal;
+}
+
+/* 手書き風文字スタイル */
+.handwriting-display {
+  @apply text-display font-handwriting;
+  font-variation-settings: "wght" 600;
+}
+
+.handwriting-heading {
+  @apply text-heading font-handwriting;
+  font-variation-settings: "wght" 500;
+}
+
+.handwriting-body {
+  @apply text-body font-handwriting;
+  font-variation-settings: "wght" 400;
+}
+
+/* 特殊エフェクト */
+.text-gradient {
+  @apply bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
+}
+
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

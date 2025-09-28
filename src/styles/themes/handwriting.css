@@ -1,0 +1,63 @@
+/* 手書き風テーマのCSS変数とクラス */
+
+:root {
+  /* 手書き風カラーパレット */
+  --color-paper: #fefefe;
+  --color-ink: #1a1a1a;
+  --color-charcoal: #2d2d2d;
+  --color-graphite: #4a4a4a;
+  --color-pencil: #6b6b6b;
+
+  /* 影・境界線 */
+  --shadow-light: 0 1px 3px rgba(26, 26, 26, 0.1);
+  --shadow-medium: 0 2px 8px rgba(26, 26, 26, 0.15);
+  --shadow-heavy: 0 4px 16px rgba(26, 26, 26, 0.2);
+
+  /* 手書き風境界線 */
+  --border-sketch: 1px solid rgba(26, 26, 26, 0.2);
+}
+
+/* 手書き風フォント */
+.font-handwriting {
+  font-family: "Klee One", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+    "Yu Gothic", "メイリオ", sans-serif;
+  font-variation-settings: "wght" 400;
+}
+
+/* 手書き風コンテナ */
+.handwriting-container {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  border-radius: 8px;
+  box-shadow: var(--shadow-light);
+}
+
+/* 手書き風カード */
+.handwriting-card {
+  @apply handwriting-container;
+  padding: 1.5rem;
+  border: var(--border-sketch);
+  transition: box-shadow 0.3s ease;
+}
+
+.handwriting-card:hover {
+  box-shadow: var(--shadow-medium);
+}
+
+/* 手書き風ボタン */
+.handwriting-button {
+  background-color: var(--color-ink);
+  color: var(--color-paper);
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.handwriting-button:hover {
+  background-color: var(--color-charcoal);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-medium);
+}

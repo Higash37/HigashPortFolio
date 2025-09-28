@@ -1,0 +1,53 @@
+/* スペーシングユーティリティ */
+
+/* セクション間隔 */
+.section-spacing {
+  @apply py-16 lg:py-20;
+}
+
+.section-spacing-sm {
+  @apply py-12 lg:py-16;
+}
+
+.section-spacing-lg {
+  @apply py-20 lg:py-28;
+}
+
+/* コンテナ設定 */
+.container-default {
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.container-narrow {
+  @apply max-w-4xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.container-wide {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* グリッド間隔 */
+.grid-default {
+  @apply grid gap-6 sm:gap-8 lg:gap-10;
+}
+
+.grid-tight {
+  @apply grid gap-4 sm:gap-6;
+}
+
+.grid-loose {
+  @apply grid gap-8 sm:gap-12 lg:gap-16;
+}
+
+/* カード間隔 */
+.card-spacing {
+  @apply p-6 sm:p-8;
+}
+
+.card-spacing-sm {
+  @apply p-4 sm:p-6;
+}
+
+.card-spacing-lg {
+  @apply p-8 sm:p-10 lg:p-12;
+}

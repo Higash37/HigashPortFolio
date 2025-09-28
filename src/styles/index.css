@@ -1,3 +1,9 @@
+/* テーマとコンポーネントのインポート */
+@import "./themes/handwriting.css";
+@import "./components/animations.css";
+@import "./utils/typography.css";
+@import "./utils/spacing.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
