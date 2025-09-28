@@ -8,11 +8,11 @@ interface AnimatedSectionProps {
   direction?: "up" | "down" | "left" | "right" | "scale";
 }
 
-const AnimatedSection = ({ 
-  children, 
-  className = "", 
+const AnimatedSection = ({
+  children,
+  className = "",
   delay = 0,
-  direction = "up" 
+  direction = "up",
 }: AnimatedSectionProps) => {
   const variants = {
     hidden: {
@@ -30,7 +30,7 @@ const AnimatedSection = ({
   };
 
   const transition = {
-    duration: 0.8,
+    duration: 0.4,
     delay: delay,
   };
   return (

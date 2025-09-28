@@ -48,12 +48,12 @@ const ProjectCard = ({ project, index = 0 }: ProjectCardProps) => {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 0.6, delay: index * 0.1 }}
+      transition={{ duration: 0.3, delay: index * 0.05 }}
       whileHover={{
         y: -8,
         scale: 1.02,
         boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
-        transition: { duration: 0.3 },
+        transition: { duration: 0.15 },
       }}
       whileTap={{ scale: 0.98 }}
     >
