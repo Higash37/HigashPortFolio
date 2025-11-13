@@ -1,4 +1,4 @@
-import ProjectCard from "../../features/project-management/ProjectCard";
+import ProjectCard from "../../features/project-management/ProjectCard.tsx";
 
 const projects = [
   {
