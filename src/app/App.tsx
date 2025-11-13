@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 // 共通型定義
 import type { ModalContent } from "../types";
 import Layout from "../components/layout";
-import SkeletonLoader from "../components/ui/loading";
+import SkeletonLoader from "../components/ui/Loading";
 import PWAInstaller from "../components/features/pwa";
 import SEO from "../components/features/seo";
-import Modal from "../components/ui/modal";
+import Modal from "../components/ui/Modal";
 import "../styles/App.css";
 
 // Lazy load components for better performance
