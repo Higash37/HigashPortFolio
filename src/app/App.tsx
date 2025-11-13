@@ -4,27 +4,27 @@ import { motion } from "framer-motion";
 import type { ModalContent } from "../types";
 import Layout from "../components/layout";
 import SkeletonLoader from "../components/ui/Loading";
-import PWAInstaller from "../components/features/pwa";
-import SEO from "../components/features/seo";
+import PWAInstaller from "../components/features/PWA";
+import SEO from "../components/features/SEO";
 import Modal from "../components/ui/Modal";
 import "../styles/App.css";
 
 // Lazy load components for better performance
-const Header = lazy(() => import("../components/layout/header/Header"));
+const Header = lazy(() => import("../components/layout/Header/Header"));
 const DevelopmentPhilosophy = lazy(
-  () => import("../components/sections/philosophy/DevelopmentPhilosophy")
+  () => import("../components/sections/Philosophy/DevelopmentPhilosophy")
 );
-const MyStory = lazy(() => import("../components/sections/story/MyStory"));
+const MyStory = lazy(() => import("../components/sections/Story/MyStory"));
 const ProjectsSection = lazy(
   () => import("../components/sections/projects/ProjectsSection")
 );
 const SkillsSection = lazy(
-  () => import("../components/sections/skills/SkillsSection")
+  () => import("../components/sections/Skills/SkillsSection")
 );
 const AboutSection = lazy(
-  () => import("../components/sections/about/AboutSection")
+  () => import("../components/sections/About/AboutSection")
 );
-const Footer = lazy(() => import("../components/layout/footer/Footer"));
+const Footer = lazy(() => import("../components/layout/Footer/Footer"));
 
 // Section loading state type
 interface LoadedSections {
