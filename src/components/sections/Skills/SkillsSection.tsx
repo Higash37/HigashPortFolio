@@ -12,7 +12,8 @@ import {
   SiExpo,
   SiFirebase,
 } from "react-icons/si";
-import type { ModalContent } from "../../../app/App";
+// 共通型定義
+import type { SkillsSectionProps } from "../../../types";
 
 const skills = [
   {
@@ -98,10 +99,6 @@ const skills = [
     icon: "🛠️",
   },
 ];
-
-interface SkillsSectionProps {
-  onCardClick: (content: ModalContent) => void;
-}
 
 const SkillsSection = ({ onCardClick }: SkillsSectionProps) => {
   return (

@@ -1,5 +1,7 @@
 import { useState, useEffect, lazy, Suspense } from "react";
 import { motion } from "framer-motion";
+// 共通型定義
+import type { ModalContent } from "../types";
 import Layout from "../components/layout/Layout";
 import SkeletonLoader from "../components/ui/loading/SkeletonLoader";
 import PWAInstaller from "../components/features/pwa/PWAInstaller";
@@ -23,11 +25,6 @@ const AboutSection = lazy(
   () => import("../components/sections/about/AboutSection")
 );
 const Footer = lazy(() => import("../components/layout/footer/Footer"));
-
-export interface ModalContent {
-  title: string;
-  description: React.ReactNode;
-}
 
 // Section loading state type
 interface LoadedSections {
