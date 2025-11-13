@@ -1,9 +1,9 @@
+// アイコンライブラリ
 import { FaRobot, FaTachometerAlt, FaUserTie } from "react-icons/fa";
-import type { ModalContent } from "../../../app/App";
-
-interface PhilosophyCardProps {
-  onCardClick: (content: ModalContent) => void;
-}
+// 共通型定義
+import type { PhilosophyCardProps } from "../../../types";
+// スタイル定数
+import { TRANSITION_DURATION } from "../../../styles/constants";
 
 const DevelopmentPhilosophy = ({ onCardClick }: PhilosophyCardProps) => {
   const philosophies = [
@@ -40,7 +40,7 @@ const DevelopmentPhilosophy = ({ onCardClick }: PhilosophyCardProps) => {
           {philosophies.map((item, index) => (
             <div
               key={index}
-              className="bg-gray-700 p-8 rounded-lg text-center transform hover:scale-105 transition-transform duration-300 cursor-pointer"
+              className={`bg-gray-700 p-8 rounded-lg text-center transform hover:scale-105 transition-transform ${TRANSITION_DURATION.NORMAL} cursor-pointer`}
               onClick={() =>
                 onCardClick({
                   title: item.title,

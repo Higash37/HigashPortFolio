@@ -1,6 +1,7 @@
-interface NavigationHeaderProps {
-  onMenuToggle: () => void;
-}
+// 共通型定義
+import type { NavigationHeaderProps } from "../../../types";
+// CSS定数
+import { TRANSITION_DURATION } from "../../../styles/constants";
 
 const NavigationHeader = ({ onMenuToggle }: NavigationHeaderProps) => {
   return (
@@ -21,25 +22,25 @@ const NavigationHeader = ({ onMenuToggle }: NavigationHeaderProps) => {
           <div className="hidden xl:flex items-center gap-6 ">
             <a
               href="#projects"
-              className="text-white px-3 py-2 rounded hover:font-bold hover:scale-105 transition-all duration-200"
+              className={`text-white px-3 py-2 rounded hover:font-bold hover:scale-105 transition-all ${TRANSITION_DURATION.QUICK}`}
             >
               改善事例
             </a>
             <a
               href="#skills"
-              className="text-white px-3 py-2 rounded hover:font-bold hover:scale-105 transition-all duration-200"
+              className={`text-white px-3 py-2 rounded hover:font-bold hover:scale-105 transition-all ${TRANSITION_DURATION.QUICK}`}
             >
               学習領域
             </a>
             <a
               href="#about"
-              className="text-white px-3 py-2 rounded hover:font-bold hover:scale-105 transition-all duration-200"
+              className={`text-white px-3 py-2 rounded hover:font-bold hover:scale-105 transition-all ${TRANSITION_DURATION.QUICK}`}
             >
               関心・将来像
             </a>
             <a
               href="#contact"
-              className="text-white px-3 py-2 rounded hover:font-bold hover:scale-105 transition-all duration-200"
+              className={`text-white px-3 py-2 rounded hover:font-bold hover:scale-105 transition-all ${TRANSITION_DURATION.QUICK}`}
             >
               相談・連絡
             </a>
@@ -51,13 +52,13 @@ const NavigationHeader = ({ onMenuToggle }: NavigationHeaderProps) => {
               href="https://github.com/Higash37"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-blue-600 px-4 py-2 rounded text-sm font-semibold hover:bg-blue-50 transition-colors duration-200"
+              className={`bg-white text-blue-600 px-4 py-2 rounded text-sm font-semibold hover:bg-blue-50 transition-colors ${TRANSITION_DURATION.QUICK}`}
             >
               学習記録
             </a>
             <a
               href="mailto:higashionna37@icloud.com"
-              className="bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded text-sm font-semibold transition-colors duration-200"
+              className={`bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded text-sm font-semibold transition-colors ${TRANSITION_DURATION.QUICK}`}
             >
               相談メール
             </a>
@@ -67,7 +68,7 @@ const NavigationHeader = ({ onMenuToggle }: NavigationHeaderProps) => {
           <div className="lg:hidden">
             <button
               onClick={onMenuToggle}
-              className="bg-blue-700 hover:bg-blue-800 p-2 rounded transition-colors duration-200"
+              className={`bg-blue-700 hover:bg-blue-800 p-2 rounded transition-colors ${TRANSITION_DURATION.QUICK}`}
             >
               <span className="text-xl text-white">☰</span>
             </button>

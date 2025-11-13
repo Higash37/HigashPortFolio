@@ -1,35 +1,44 @@
 // サイトマップ生成用の設定
+
+// SEO優先度の定数定義
+const PRIORITY = {
+  HIGHEST: 1.0, // メインページ
+  HIGH: 0.9, // プロジェクト一覧
+  MEDIUM: 0.8, // スキル・自己紹介
+  LOW: 0.7, // お問い合わせ
+} as const;
+
 export const sitemapConfig = {
   baseUrl: "https://ryo-higashionna-portfolio.vercel.app",
   pages: [
     {
       url: "/",
       changefreq: "weekly",
-      priority: 1.0,
+      priority: PRIORITY.HIGHEST,
       lastmod: new Date().toISOString(),
     },
     {
       url: "/#about",
       changefreq: "monthly",
-      priority: 0.8,
+      priority: PRIORITY.MEDIUM,
       lastmod: new Date().toISOString(),
     },
     {
       url: "/#skills",
       changefreq: "monthly",
-      priority: 0.8,
+      priority: PRIORITY.MEDIUM,
       lastmod: new Date().toISOString(),
     },
     {
       url: "/#projects",
       changefreq: "weekly",
-      priority: 0.9,
+      priority: PRIORITY.HIGH,
       lastmod: new Date().toISOString(),
     },
     {
       url: "/#contact",
       changefreq: "monthly",
-      priority: 0.7,
+      priority: PRIORITY.LOW,
       lastmod: new Date().toISOString(),
     },
   ],

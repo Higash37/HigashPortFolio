@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
-    "target": "ES2023",
-    "lib": ["ES2023"],
+    "target": "ES2022", // ES2023 → ES2022に変更（安定版を使用）
+    "lib": ["ES2022"], // ES2023 → ES2022に変更（安定版を使用）
     "module": "ESNext",
     "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true, // OS間でのファイル名の大文字小文字の違いによる問題を防ぐ
 
     /* Bundler mode */
     "moduleResolution": "bundler",

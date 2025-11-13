@@ -1,3 +1,6 @@
+// スタイル定数
+import { TRANSITION_DURATION } from "../../../styles/constants";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -25,13 +28,13 @@ const Footer = () => {
               href="https://github.com/Higash37"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center gap-2"
+              className={`text-gray-400 hover:text-white transition-colors ${TRANSITION_DURATION.QUICK} flex items-center gap-2`}
             >
               <span>📚</span> 学習記録
             </a>
             <a
               href="mailto:higashionna37@icloud.com"
-              className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center gap-2"
+              className={`text-gray-400 hover:text-white transition-colors ${TRANSITION_DURATION.QUICK} flex items-center gap-2`}
             >
               <span>💬</span> 相談メール
             </a>

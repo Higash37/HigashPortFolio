@@ -1,6 +1,12 @@
+// Reactフック
 import { useState } from "react";
+// アニメーションライブラリ
 import { motion } from "framer-motion";
 
+// スタイル定数
+import { TRANSITION_DURATION } from "../../../styles/constants";
+
+// タイムラインアイテムの型定義
 interface TimelineItem {
   id: number;
   year: string;
@@ -11,64 +17,66 @@ interface TimelineItem {
   color: string;
 }
 
+// ストーリータイムラインのデータ定義
+const STORY_TIMELINE: TimelineItem[] = [
+  {
+    id: 1,
+    year: "2023",
+    title: "Excel地獄との出会い",
+    icon: "😫",
+    description:
+      "毎日3時間のコピペ作業。「これ、本当に人間がやる仕事？」という疑問から全てが始まった。",
+    detail:
+      "大学でのアルバイトで、毎日大量のデータを手作業で集計していました。同じパターンの繰り返し作業を見て、「これは何か違う」と強く感じました。人間の創造性や判断力を、単純作業に費やすのはもったいない。この違和感が、私の業務改善への第一歩でした。",
+    color: "from-gray-500 to-gray-600",
+  },
+  {
+    id: 2,
+    year: "2023",
+    title: "VBAとの運命的な出会い",
+    icon: "💡",
+    description: "3時間が30分に。初めて「技術で人を助ける」実感を得た瞬間。",
+    detail:
+      "YouTubeでVBAの存在を知り、独学で勉強開始。最初のマクロが動いた瞬間の感動は今でも忘れません。チームメンバーから「魔法みたい！」と言われ、技術が人の時間と心の余裕を生み出せることを実感。でも同時に、VBAの限界も見えてきました。",
+    color: "from-blue-500 to-blue-600",
+  },
+  {
+    id: 3,
+    year: "2024",
+    title: "限界を感じ、新しい世界へ",
+    icon: "🚪",
+    description:
+      "VBAじゃ足りない。もっと柔軟で、もっとパワフルな解決策を求めて。",
+    detail:
+      "複雑な要求に応えるには、VBAでは限界がありました。Webアプリ、モバイルアプリ、API連携...やりたいことは山ほどあるのに、技術が追いつかない。そんな時、プログラミングの世界への扉が開きました。でも、独学でのコーディングは想像以上に困難で...",
+    color: "from-purple-500 to-purple-600",
+  },
+  {
+    id: 4,
+    year: "2024",
+    title: "AIとの協業という答え",
+    icon: "🤖",
+    description:
+      "コードが書けなくても、アイデアを形にできる。新しい開発スタイルの発見。",
+    detail:
+      "ChatGPT、Claude、GitHub Copilot...AIツールとの出会いが全てを変えました。「なぜこう書くのか」を理解しながら、実際に動くものを作れる。これは単なる効率化ではなく、学習と創造の新しい形。AIは私の先生であり、パートナーです。",
+    color: "from-green-500 to-green-600",
+  },
+  {
+    id: 5,
+    year: "現在",
+    title: "人とチームの価値を最大化",
+    icon: "🎯",
+    description: "技術は手段。目的は「人が本来の価値を発揮できる環境づくり」",
+    detail:
+      "今の私の関心は、個人の効率化を超えて、チーム全体の価値創造にあります。誰もが創造的な仕事に集中できる環境、アイデアがすぐに形になる組織、技術の恩恵を全員が受けられる未来。そんな理想に向かって、今日も学び続けています。",
+    color: "from-orange-500 to-red-500",
+  },
+];
+
+// メインコンポーネント
 const MyStory = () => {
   const [expandedId, setExpandedId] = useState<number | null>(null);
-
-  const timeline: TimelineItem[] = [
-    {
-      id: 1,
-      year: "2023",
-      title: "Excel地獄との出会い",
-      icon: "😫",
-      description:
-        "毎日3時間のコピペ作業。「これ、本当に人間がやる仕事？」という疑問から全てが始まった。",
-      detail:
-        "大学でのアルバイトで、毎日大量のデータを手作業で集計していました。同じパターンの繰り返し作業を見て、「これは何か違う」と強く感じました。人間の創造性や判断力を、単純作業に費やすのはもったいない。この違和感が、私の業務改善への第一歩でした。",
-      color: "from-gray-500 to-gray-600",
-    },
-    {
-      id: 2,
-      year: "2023",
-      title: "VBAとの運命的な出会い",
-      icon: "💡",
-      description: "3時間が30分に。初めて「技術で人を助ける」実感を得た瞬間。",
-      detail:
-        "YouTubeでVBAの存在を知り、独学で勉強開始。最初のマクロが動いた瞬間の感動は今でも忘れません。チームメンバーから「魔法みたい！」と言われ、技術が人の時間と心の余裕を生み出せることを実感。でも同時に、VBAの限界も見えてきました。",
-      color: "from-blue-500 to-blue-600",
-    },
-    {
-      id: 3,
-      year: "2024",
-      title: "限界を感じ、新しい世界へ",
-      icon: "🚪",
-      description:
-        "VBAじゃ足りない。もっと柔軟で、もっとパワフルな解決策を求めて。",
-      detail:
-        "複雑な要求に応えるには、VBAでは限界がありました。Webアプリ、モバイルアプリ、API連携...やりたいことは山ほどあるのに、技術が追いつかない。そんな時、プログラミングの世界への扉が開きました。でも、独学でのコーディングは想像以上に困難で...",
-      color: "from-purple-500 to-purple-600",
-    },
-    {
-      id: 4,
-      year: "2024",
-      title: "AIとの協業という答え",
-      icon: "🤖",
-      description:
-        "コードが書けなくても、アイデアを形にできる。新しい開発スタイルの発見。",
-      detail:
-        "ChatGPT、Claude、GitHub Copilot...AIツールとの出会いが全てを変えました。「なぜこう書くのか」を理解しながら、実際に動くものを作れる。これは単なる効率化ではなく、学習と創造の新しい形。AIは私の先生であり、パートナーです。",
-      color: "from-green-500 to-green-600",
-    },
-    {
-      id: 5,
-      year: "現在",
-      title: "人とチームの価値を最大化",
-      icon: "🎯",
-      description: "技術は手段。目的は「人が本来の価値を発揮できる環境づくり」",
-      detail:
-        "今の私の関心は、個人の効率化を超えて、チーム全体の価値創造にあります。誰もが創造的な仕事に集中できる環境、アイデアがすぐに形になる組織、技術の恩恵を全員が受けられる未来。そんな理想に向かって、今日も学び続けています。",
-      color: "from-orange-500 to-red-500",
-    },
-  ];
 
   return (
     <section
@@ -92,7 +100,7 @@ const MyStory = () => {
 
           {/* タイムラインアイテム */}
           <div className="space-y-8 md:space-y-12">
-            {timeline.map((item, index) => (
+            {STORY_TIMELINE.map((item, index) => (
               <motion.div
                 key={item.id}
                 className={`relative flex items-center ${
@@ -152,7 +160,9 @@ const MyStory = () => {
 
                     {/* 詳細表示 */}
                     <div
-                      className={`overflow-hidden transition-all duration-500 ${
+                      className={`overflow-hidden transition-all ${
+                        TRANSITION_DURATION.SMOOTH
+                      } ${
                         expandedId === item.id
                           ? "max-h-96 opacity-100"
                           : "max-h-0 opacity-0"

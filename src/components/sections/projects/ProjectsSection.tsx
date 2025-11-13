@@ -1,5 +1,7 @@
+// 内部コンポーネント
 import ProjectCard from "../../features/project-management/ProjectCard";
 
+// プロジェクトデータ定義
 const projects = [
   {
     id: "1",

@@ -1,5 +1,6 @@
 const CACHE_NAME = "ryo-higashionna-portfolio-v1";
-const urlsToCache = [
+// キャッシュ対象URLの定義
+const URLS_TO_CACHE = [
   "/",
   "/manifest.json",
   // 静的アセット
@@ -14,7 +15,7 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       console.log("キャッシュを開いています");
-      return cache.addAll(urlsToCache);
+      return cache.addAll(URLS_TO_CACHE);
     })
   );
 });

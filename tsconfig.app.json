@@ -6,6 +6,7 @@
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true, // OS間でのファイル名の大文字小文字の違いによる問題を防ぐ
 
     /* Bundler mode */
     "moduleResolution": "bundler",

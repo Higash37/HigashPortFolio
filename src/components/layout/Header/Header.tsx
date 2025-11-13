@@ -1,5 +1,10 @@
+// アニメーションライブラリ
 import { motion } from "framer-motion";
 
+// スタイル定数
+import { TRANSITION_DURATION } from "../../../styles/constants";
+
+// メインヘッダーコンポーネント
 const Header = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -24,7 +29,9 @@ const Header = () => {
     duration: 0.4,
   };
   return (
-    <header className="bg-gradient-to-r from-blue-600 to-purple-600 text-white relative z-10 w-full">
+    <header
+      className={`bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500 text-white py-20 relative overflow-hidden transition-all ${TRANSITION_DURATION.NORMAL}`}
+    >
       <div className="max-w-5xl mx-auto px-4 py-16">
         <motion.div
           className="text-center"

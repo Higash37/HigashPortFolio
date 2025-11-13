@@ -1,12 +1,7 @@
+// アニメーションライブラリ
 import { motion } from "framer-motion";
-import type { ReactNode } from "react";
-
-interface AnimatedSectionProps {
-  children: ReactNode;
-  className?: string;
-  delay?: number;
-  direction?: "up" | "down" | "left" | "right" | "scale";
-}
+// 共通型定義
+import type { AnimatedSectionProps } from "../../../types";
 
 const AnimatedSection = ({
   children,
@@ -14,12 +9,26 @@ const AnimatedSection = ({
   delay = 0,
   direction = "up",
 }: AnimatedSectionProps) => {
+  // アニメーションパラメータの定数定義
+  const ANIMATION_OFFSET = 50;
+  const ANIMATION_SCALE_START = 0.8;
+
   const variants = {
     hidden: {
       opacity: 0,
-      y: direction === "up" ? 50 : direction === "down" ? -50 : 0,
-      x: direction === "left" ? 50 : direction === "right" ? -50 : 0,
-      scale: direction === "scale" ? 0.8 : 1,
+      y:
+        direction === "up"
+          ? ANIMATION_OFFSET
+          : direction === "down"
+          ? -ANIMATION_OFFSET
+          : 0,
+      x:
+        direction === "left"
+          ? ANIMATION_OFFSET
+          : direction === "right"
+          ? -ANIMATION_OFFSET
+          : 0,
+      scale: direction === "scale" ? ANIMATION_SCALE_START : 1,
     },
     visible: {
       opacity: 1,

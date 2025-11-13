@@ -1,7 +1,6 @@
-interface SidebarProps {
-  isOpen: boolean;
-  onClose: () => void;
-}
+// 共通型定義
+import type { SidebarProps } from "../../../types";
+import { TRANSITION_DURATION } from "../../../styles/constants";
 
 const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
   return (
@@ -17,7 +16,9 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
       {/* サイドバー本体 */}
       <aside
         className={`
-          fixed top-20 lg:top-20 left-0 bottom-0 lg:bottom-auto bg-gray-100 shadow-lg z-50 transition-transform duration-300 ease-in-out
+          fixed top-20 lg:top-20 left-0 bottom-0 lg:bottom-auto bg-gray-100 shadow-lg z-50 transition-transform ${
+            TRANSITION_DURATION.NORMAL
+          } ease-in-out
           w-80 lg:w-80
           lg:h-[calc(100vh-5rem)]
           ${isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
@@ -70,7 +71,7 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
             </h3>
             <a
               href="#projects"
-              className="flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-colors duration-200 text-gray-700 hover:text-blue-600"
+              className={`flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-colors ${TRANSITION_DURATION.QUICK} text-gray-700 hover:text-blue-600`}
               onClick={onClose}
             >
               <span>🛠️</span>
@@ -78,7 +79,7 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
             </a>
             <a
               href="#skills"
-              className="flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-colors duration-200 text-gray-700 hover:text-blue-600"
+              className={`flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-colors ${TRANSITION_DURATION.QUICK} text-gray-700 hover:text-blue-600`}
               onClick={onClose}
             >
               <span>🔄</span>
@@ -86,7 +87,7 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
             </a>
             <a
               href="#about"
-              className="flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-colors duration-200 text-gray-700 hover:text-blue-600"
+              className={`flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-colors ${TRANSITION_DURATION.QUICK} text-gray-700 hover:text-blue-600`}
               onClick={onClose}
             >
               <span>🎯</span>
@@ -94,7 +95,7 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
             </a>
             <a
               href="#contact"
-              className="flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-colors duration-200 text-gray-700 hover:text-blue-600"
+              className={`flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 transition-colors ${TRANSITION_DURATION.QUICK} text-gray-700 hover:text-blue-600`}
               onClick={onClose}
             >
               <span>💬</span>

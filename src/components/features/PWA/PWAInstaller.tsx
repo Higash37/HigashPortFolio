@@ -1,5 +1,10 @@
-import { useEffect, useState } from "react";
+// Reactフック
+import { useState, useEffect } from "react";
 
+// スタイル定数
+import { TRANSITION_DURATION } from "../../../styles/constants";
+
+// PWAインストールプロンプトイベントの型定義
 interface BeforeInstallPromptEvent extends Event {
   prompt(): Promise<void>;
   userChoice: Promise<{
@@ -8,6 +13,7 @@ interface BeforeInstallPromptEvent extends Event {
   }>;
 }
 
+// PWAインストーラーメインコンポーネント
 const PWAInstaller = () => {
   const [deferredPrompt, setDeferredPrompt] =
     useState<BeforeInstallPromptEvent | null>(null);
@@ -84,13 +90,13 @@ const PWAInstaller = () => {
         <div className="flex gap-2">
           <button
             onClick={handleInstallClick}
-            className="flex-1 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition-colors"
+            className={`flex-1 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition-colors ${TRANSITION_DURATION.QUICK}`}
           >
             インストール
           </button>
           <button
             onClick={handleDismiss}
-            className="flex-1 bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-200 transition-colors"
+            className={`flex-1 bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-200 transition-colors ${TRANSITION_DURATION.QUICK}`}
           >
             後で
           </button>

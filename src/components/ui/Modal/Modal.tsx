@@ -1,22 +1,20 @@
-import { useEffect } from 'react';
+// Reactフック
+import { useEffect } from "react";
+// 共通型定義
+import type { ModalProps } from "../../../types";
 
-interface ModalProps {
-  isOpen: boolean;
-  onClose: () => void;
-  children: React.ReactNode;
-}
-
+// モーダルメインコンポーネント
 const Modal = ({ isOpen, onClose, children }: ModalProps) => {
   useEffect(() => {
     const handleEsc = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
+      if (event.key === "Escape") {
         onClose();
       }
     };
-    window.addEventListener('keydown', handleEsc);
+    window.addEventListener("keydown", handleEsc);
 
     return () => {
-      window.removeEventListener('keydown', handleEsc);
+      window.removeEventListener("keydown", handleEsc);
     };
   }, [onClose]);
 

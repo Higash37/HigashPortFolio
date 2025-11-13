@@ -1,22 +1,13 @@
+// アニメーションライブラリ
 import { motion } from "framer-motion";
-
-interface Project {
-  id: string;
-  title: string;
-  description: string;
-  tech: string[];
-  link?: string;
-  github?: string;
-  type: "web" | "mobile" | "excel" | "other";
-}
-
-interface ProjectCardProps {
-  project: Project;
-  index?: number;
-}
+// 共通型定義
+import type { ProjectCardProps } from "../../../types";
+// スタイル定数
+import { TRANSITION_DURATION } from "../../../styles/constants";
 
 const ProjectCard = ({ project, index = 0 }: ProjectCardProps) => {
-  const getIcon = (type: string) => {
+  // プロジェクトタイプに対応するアイコンを取得
+  const getProjectIcon = (type: string) => {
     switch (type) {
       case "web":
         return "🌐";
@@ -29,7 +20,8 @@ const ProjectCard = ({ project, index = 0 }: ProjectCardProps) => {
     }
   };
 
-  const getTypeColor = (type: string) => {
+  // プロジェクトタイプに対応する色を取得
+  const getProjectTypeColor = (type: string) => {
     switch (type) {
       case "web":
         return "bg-blue-100 text-blue-800";
@@ -78,12 +70,12 @@ const ProjectCard = ({ project, index = 0 }: ProjectCardProps) => {
               className="w-8 h-8 rounded-full"
             />
           ) : (
-            <span className="text-2xl">{getIcon(project.type)}</span>
+            <span className="text-2xl">{getProjectIcon(project.type)}</span>
           )}
           <h3 className="text-xl font-bold text-gray-800">{project.title}</h3>
         </div>
         <span
-          className={`px-3 py-1 rounded-full text-xs font-medium ${getTypeColor(
+          className={`px-3 py-1 rounded-full text-xs font-medium ${getProjectTypeColor(
             project.type
           )}`}
         >
@@ -112,7 +104,7 @@ const ProjectCard = ({ project, index = 0 }: ProjectCardProps) => {
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-2 rounded text-sm transition-colors duration-200 flex-1 text-center"
+            className={`bg-blue-500 hover:bg-blue-600 text-white px-3 py-2 rounded text-sm transition-colors ${TRANSITION_DURATION.QUICK} flex-1 text-center`}
           >
             🚀 アプリを開く
           </a>
@@ -122,7 +114,7 @@ const ProjectCard = ({ project, index = 0 }: ProjectCardProps) => {
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gray-800 hover:bg-gray-900 text-white px-3 py-2 rounded text-sm transition-colors duration-200 flex-1 text-center"
+            className={`bg-gray-800 hover:bg-gray-900 text-white px-3 py-2 rounded text-sm transition-colors ${TRANSITION_DURATION.QUICK} flex-1 text-center`}
           >
             📚 ソースを見る
           </a>

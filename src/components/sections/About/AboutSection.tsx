@@ -1,3 +1,6 @@
+// スタイル定数
+import { TRANSITION_DURATION } from "../../../styles/constants";
+
 const AboutSection = () => {
   return (
     <section
@@ -114,7 +117,7 @@ const AboutSection = () => {
             <div className="flex flex-col gap-4">
               <a
                 href="mailto:higashionna37@icloud.com"
-                className="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-purple-50 transition-colors duration-200 text-center"
+                className={`bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-purple-50 transition-colors ${TRANSITION_DURATION.QUICK} text-center`}
               >
                 📧 メールで連絡
               </a>
@@ -122,7 +125,7 @@ const AboutSection = () => {
                 href="https://github.com/Higash37"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:text-white hover:font-bold hover:scale-105 transition-all duration-200 text-center"
+                className={`border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:text-white hover:font-bold hover:scale-105 transition-all ${TRANSITION_DURATION.QUICK} text-center`}
               >
                 🔗 GitHub プロフィール
               </a>

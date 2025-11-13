@@ -1,3 +1,4 @@
+// アイコンライブラリ
 import {
   FaReact,
   FaJs,
@@ -12,8 +13,12 @@ import {
   SiExpo,
   SiFirebase,
 } from "react-icons/si";
-import type { ModalContent } from "../../../app/App";
+// 共通型定義
+import type { SkillsSectionProps } from "../../../types";
+// スタイル定数
+import { TRANSITION_DURATION } from "../../../styles/constants";
 
+// スキルデータ定義
 const skills = [
   {
     category: "フロントエンド",
@@ -99,10 +104,6 @@ const skills = [
   },
 ];
 
-interface SkillsSectionProps {
-  onCardClick: (content: ModalContent) => void;
-}
-
 const SkillsSection = ({ onCardClick }: SkillsSectionProps) => {
   return (
     <section id="skills" className="py-16 bg-white relative z-10 w-full">
@@ -121,7 +122,7 @@ const SkillsSection = ({ onCardClick }: SkillsSectionProps) => {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow duration-300"
+              className={`bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow ${TRANSITION_DURATION.NORMAL}`}
             >
               <div className="text-center mb-4">
                 <span className="text-4xl mb-2 block">{skill.icon}</span>

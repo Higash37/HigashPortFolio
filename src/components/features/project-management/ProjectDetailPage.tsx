@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-// Simple project detail component for now
+// シンプルなプロジェクト詳細コンポーネント
 const ProjectDetail: React.FC<{ id: string }> = ({ id }) => (
   <div className="min-h-screen flex items-center justify-center bg-gray-50">
     <div className="text-center">
@@ -15,6 +15,7 @@ const ProjectDetail: React.FC<{ id: string }> = ({ id }) => (
   </div>
 );
 
+// プロジェクトが見つからない場合のコンポーネント
 const NotFoundProject: React.FC = () => (
   <div className="min-h-screen flex items-center justify-center bg-gray-50">
     <div className="text-center">

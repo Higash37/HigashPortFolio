@@ -1,7 +1,13 @@
-interface SkeletonLoaderProps {
-  type?: "header" | "sidebar" | "section" | "card";
-}
+// スケルトンローダーメインコンポーネント
+import type { SkeletonLoaderProps } from "../../../types";
+const SKELETON_COUNTS = {
+  navigation: 4,
+  external: 2,
+  cards: 6,
+  features: 3,
+} as const;
 
+// スケルトンローダーメインコンポーネント
 const SkeletonLoader = ({ type = "section" }: SkeletonLoaderProps) => {
   const renderHeaderSkeleton = () => (
     <div className="bg-gradient-to-r from-blue-600 to-purple-600 w-full animate-pulse">
@@ -47,7 +53,7 @@ const SkeletonLoader = ({ type = "section" }: SkeletonLoaderProps) => {
       <div className="mb-6">
         <div className="h-5 bg-gray-300 rounded w-24 mb-3"></div>
         <div className="space-y-3">
-          {[1, 2, 3, 4].map((i) => (
+          {Array.from({ length: SKELETON_COUNTS.navigation }, (_, i) => (
             <div key={i} className="flex items-center gap-3">
               <div className="w-5 h-5 bg-gray-300 rounded"></div>
               <div className="h-4 bg-gray-300 rounded w-20"></div>
@@ -60,7 +66,7 @@ const SkeletonLoader = ({ type = "section" }: SkeletonLoaderProps) => {
       <div className="mb-6">
         <div className="h-5 bg-gray-300 rounded w-20 mb-3"></div>
         <div className="space-y-3">
-          {[1, 2].map((i) => (
+          {Array.from({ length: SKELETON_COUNTS.external }, (_, i) => (
             <div key={i} className="flex items-center gap-3">
               <div className="w-5 h-5 bg-gray-300 rounded"></div>
               <div className="h-4 bg-gray-300 rounded w-16"></div>
@@ -76,7 +82,7 @@ const SkeletonLoader = ({ type = "section" }: SkeletonLoaderProps) => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="h-8 bg-gray-300 rounded w-48 mx-auto mb-12"></div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[1, 2, 3, 4, 5, 6].map((i) => (
+          {Array.from({ length: SKELETON_COUNTS.cards }, (_, i) => (
             <div key={i} className="bg-gray-100 p-6 rounded-lg">
               <div className="w-12 h-12 bg-gray-300 rounded mb-4"></div>
               <div className="h-5 bg-gray-300 rounded w-32 mb-2"></div>
@@ -96,7 +102,7 @@ const SkeletonLoader = ({ type = "section" }: SkeletonLoaderProps) => {
       <div className="h-4 bg-gray-300 rounded w-full mb-1"></div>
       <div className="h-4 bg-gray-300 rounded w-5/6 mb-4"></div>
       <div className="flex gap-2 mb-4">
-        {[1, 2, 3].map((i) => (
+        {Array.from({ length: SKELETON_COUNTS.features }, (_, i) => (
           <div key={i} className="h-6 bg-gray-300 rounded-full w-16"></div>
         ))}
       </div>

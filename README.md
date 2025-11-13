@@ -143,3 +143,7 @@ MIT License
 ---
 
 ### Built with ❤️ using React + TypeScript + Vite + Tailwind CSS
+
+```text
+
+```

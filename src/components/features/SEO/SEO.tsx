@@ -1,5 +1,7 @@
+// Reactフック
 import { useEffect } from "react";
 
+// SEOコンポーネントのProps型定義
 interface SEOProps {
   title?: string;
   description?: string;
@@ -9,6 +11,7 @@ interface SEOProps {
   type?: string;
 }
 
+// SEOメインコンポーネント
 const SEO = ({
   title = "東恩納良 ポートフォリオ - React / React Native / Excel 開発者",
   description = "React、React Native、Excelを使う大学生 東恩納良のポートフォリオサイト。Web・モバイル・業務効率化のソリューションを提供。",
