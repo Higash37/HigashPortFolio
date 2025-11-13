@@ -37,6 +37,16 @@ self.addEventListener("activate", (event) => {
 
 // ネットワークリクエストをキャッシュから処理
 self.addEventListener("fetch", (event) => {
+  // chrome-extension や unsupported schemes をスキップ
+  if (
+    !event.request.url.startsWith("http") ||
+    event.request.url.startsWith("chrome-extension://") ||
+    event.request.url.startsWith("moz-extension://") ||
+    event.request.url.startsWith("ms-browser-extension://")
+  ) {
+    return;
+  }
+
   event.respondWith(
     caches.match(event.request).then((response) => {
       // キャッシュにある場合はそれを返す
