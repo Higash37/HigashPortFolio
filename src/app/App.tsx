@@ -1,30 +1,30 @@
 import { useState, useEffect, lazy, Suspense } from "react";
 import { motion } from "framer-motion";
 // 共通型定義
-import type { ModalContent } from "../types";
-import Layout from "../components/layout/Layout";
-import SkeletonLoader from "../components/ui/loading/SkeletonLoader";
-import PWAInstaller from "../components/features/pwa/PWAInstaller";
-import SEO from "../components/features/seo/SEO";
-import Modal from "../components/ui/modal/Modal";
+import type { ModalContent } from "../types/index.ts";
+import Layout from "../components/layout/Layout.tsx";
+import SkeletonLoader from "../components/ui/loading/SkeletonLoader.tsx";
+import PWAInstaller from "../components/features/pwa/PWAInstaller.tsx";
+import SEO from "../components/features/seo/SEO.tsx";
+import Modal from "../components/ui/modal/Modal.tsx";
 import "../styles/App.css";
 
 // Lazy load components for better performance
-const Header = lazy(() => import("../components/layout/header/Header"));
+const Header = lazy(() => import("../components/layout/header/Header.tsx"));
 const DevelopmentPhilosophy = lazy(
-  () => import("../components/sections/philosophy/DevelopmentPhilosophy")
+  () => import("../components/sections/philosophy/DevelopmentPhilosophy.tsx")
 );
-const MyStory = lazy(() => import("../components/sections/story/MyStory"));
+const MyStory = lazy(() => import("../components/sections/story/MyStory.tsx"));
 const ProjectsSection = lazy(
-  () => import("../components/sections/projects/ProjectsSection")
+  () => import("../components/sections/projects/ProjectsSection.tsx")
 );
 const SkillsSection = lazy(
-  () => import("../components/sections/skills/SkillsSection")
+  () => import("../components/sections/skills/SkillsSection.tsx")
 );
 const AboutSection = lazy(
-  () => import("../components/sections/about/AboutSection")
+  () => import("../components/sections/about/AboutSection.tsx")
 );
-const Footer = lazy(() => import("../components/layout/footer/Footer"));
+const Footer = lazy(() => import("../components/layout/footer/Footer.tsx"));
 
 // Section loading state type
 interface LoadedSections {
