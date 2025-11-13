@@ -2,11 +2,11 @@ import { useState, useEffect, lazy, Suspense } from "react";
 import { motion } from "framer-motion";
 // 共通型定義
 import type { ModalContent } from "../types";
-import Layout from "../components/layout/Layout";
-import SkeletonLoader from "../components/ui/loading/SkeletonLoader";
-import PWAInstaller from "../components/features/pwa/PWAInstaller";
-import SEO from "../components/features/seo/SEO";
-import Modal from "../components/ui/modal/Modal";
+import Layout from "../components/layout";
+import SkeletonLoader from "../components/ui/loading";
+import PWAInstaller from "../components/features/pwa";
+import SEO from "../components/features/seo";
+import Modal from "../components/ui/modal";
 import "../styles/App.css";
 
 // Lazy load components for better performance
