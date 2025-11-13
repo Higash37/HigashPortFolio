@@ -1,11 +1,11 @@
+// Reactフック
 import { useState, useEffect } from "react";
+// 内部コンポーネント
 import NavigationHeader from "./navigation/NavigationHeader";
 import Sidebar from "./navigation/Sidebar";
 import SkeletonLoader from "../ui/loading/SkeletonLoader";
-
-interface LayoutProps {
-  children: React.ReactNode;
-}
+// 共通型定義
+import type { LayoutProps } from "../../types";
 
 const Layout = ({ children }: LayoutProps) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
