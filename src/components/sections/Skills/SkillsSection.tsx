@@ -13,7 +13,7 @@ import {
   SiFirebase,
 } from "react-icons/si";
 // 共通型定義
-import type { SkillsSectionProps } from "../../../types";
+import type { SkillsSectionProps } from "../../../types/index.ts";
 
 const skills = [
   {

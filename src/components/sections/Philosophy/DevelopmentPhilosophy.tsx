@@ -1,6 +1,6 @@
 import { FaRobot, FaTachometerAlt, FaUserTie } from "react-icons/fa";
 // 共通型定義
-import type { PhilosophyCardProps } from "../../../types";
+import type { PhilosophyCardProps } from "../../../types/index.ts";
 
 const DevelopmentPhilosophy = ({ onCardClick }: PhilosophyCardProps) => {
   const philosophies = [
