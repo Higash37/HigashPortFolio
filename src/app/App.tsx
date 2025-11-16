@@ -1,7 +1,7 @@
 import { useState, useEffect, lazy, Suspense } from "react";
 import { motion } from "framer-motion";
 // 共通型定義
-import type { ModalContent } from "../types/index.ts";
+import type { ModalContent } from "../types/index";
 import Layout from "../components/layout";
 import SkeletonLoader from "../components/ui/loading";
 import PWAInstaller from "../components/features/pwa";
