@@ -1,30 +1,30 @@
 import { useState, useEffect, lazy, Suspense } from "react";
 import { motion } from "framer-motion";
 // 共通型定義
-import type { ModalContent } from "../types";
-import Layout from "../components/layout";
-import SkeletonLoader from "../components/ui/Loading";
-import PWAInstaller from "../components/features/PWA";
-import SEO from "../components/features/SEO";
-import Modal from "../components/ui/Modal";
+import type { ModalContent } from "../types/index.ts";
+import Layout from "../components/layout/Layout.tsx";
+import SkeletonLoader from "../components/ui/loading/SkeletonLoader.tsx";
+import PWAInstaller from "../components/features/pwa/PWAInstaller.tsx";
+import SEO from "../components/features/seo/SEO.tsx";
+import Modal from "../components/ui/modal/Modal.tsx";
 import "../styles/App.css";
 
 // Lazy load components for better performance
-const Header = lazy(() => import("../components/layout/Header/Header"));
+const Header = lazy(() => import("../components/layout/header/Header.tsx"));
 const DevelopmentPhilosophy = lazy(
-  () => import("../components/sections/Philosophy/DevelopmentPhilosophy")
+  () => import("../components/sections/philosophy/DevelopmentPhilosophy.tsx")
 );
-const MyStory = lazy(() => import("../components/sections/Story/MyStory"));
+const MyStory = lazy(() => import("../components/sections/story/MyStory.tsx"));
 const ProjectsSection = lazy(
-  () => import("../components/sections/projects/ProjectsSection")
+  () => import("../components/sections/projects/ProjectsSection.tsx")
 );
 const SkillsSection = lazy(
-  () => import("../components/sections/Skills/SkillsSection")
+  () => import("../components/sections/skills/SkillsSection.tsx")
 );
 const AboutSection = lazy(
-  () => import("../components/sections/About/AboutSection")
+  () => import("../components/sections/about/AboutSection.tsx")
 );
-const Footer = lazy(() => import("../components/layout/Footer/Footer"));
+const Footer = lazy(() => import("../components/layout/footer/Footer.tsx"));
 
 // Section loading state type
 interface LoadedSections {
