@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 // 内部コンポーネント
 import NavigationHeader from "./navigation/NavigationHeader";
 import Sidebar from "./navigation/Sidebar";
-import SkeletonLoader from "../ui/loading/SkeletonLoader";
+import SkeletonLoader from "../ui/loading";
 // 共通型定義
 import type { LayoutProps } from "../../types/index.ts";
 
