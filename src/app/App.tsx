@@ -2,29 +2,29 @@ import { useState, useEffect, lazy, Suspense } from "react";
 import { motion } from "framer-motion";
 // 共通型定義
 import type { ModalContent } from "../types/index.ts";
-import Layout from "../components/layout/Layout.tsx";
-import SkeletonLoader from "../components/ui/loading/SkeletonLoader.tsx";
-import PWAInstaller from "../components/features/pwa/PWAInstaller.tsx";
-import SEO from "../components/features/seo/SEO.tsx";
-import Modal from "../components/ui/modal/Modal.tsx";
+import Layout from "../components/layout";
+import SkeletonLoader from "../components/ui/loading";
+import PWAInstaller from "../components/features/pwa";
+import SEO from "../components/features/seo";
+import Modal from "../components/ui/modal";
 import "../styles/App.css";
 
 // Lazy load components for better performance
-const Header = lazy(() => import("../components/layout/header/Header.tsx"));
+const Header = lazy(() => import("../components/layout/header/Header"));
 const DevelopmentPhilosophy = lazy(
-  () => import("../components/sections/philosophy/DevelopmentPhilosophy.tsx")
+  () => import("../components/sections/philosophy/DevelopmentPhilosophy")
 );
-const MyStory = lazy(() => import("../components/sections/story/MyStory.tsx"));
+const MyStory = lazy(() => import("../components/sections/story/MyStory"));
 const ProjectsSection = lazy(
-  () => import("../components/sections/projects/ProjectsSection.tsx")
+  () => import("../components/sections/projects/ProjectsSection")
 );
 const SkillsSection = lazy(
-  () => import("../components/sections/skills/SkillsSection.tsx")
+  () => import("../components/sections/skills/SkillsSection")
 );
 const AboutSection = lazy(
-  () => import("../components/sections/about/AboutSection.tsx")
+  () => import("../components/sections/about/AboutSection")
 );
-const Footer = lazy(() => import("../components/layout/footer/Footer.tsx"));
+const Footer = lazy(() => import("../components/layout/footer/Footer"));
 
 // Section loading state type
 interface LoadedSections {
