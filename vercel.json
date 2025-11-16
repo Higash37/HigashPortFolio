@@ -4,11 +4,6 @@
   "outputDirectory": "dist",
   "framework": null,
   "installCommand": "npm install",
-  "functions": {
-    "app/api/**/*.ts": {
-      "runtime": "nodejs20.x"
-    }
-  },
   "build": {
     "env": {
       "NODE_VERSION": "20"
