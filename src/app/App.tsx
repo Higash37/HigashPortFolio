@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 // 共通型定義
 import type { ModalContent } from "../types/index";
 import Layout from "../components/layout/Layout";
+// Direct import path for Vercel compatibility
 import SkeletonLoader from "../components/ui/loading/SkeletonLoader";
 import PWAInstaller from "../components/features/pwa/PWAInstaller";
 import SEO from "../components/features/seo/SEO";
