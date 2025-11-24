@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 // 共通型定義
 import type { ModalContent } from "../types/index";
 import Layout from "../components/layout/Layout";
-import SkeletonLoader from "../components/ui/loading/SkeletonLoader";
+import SkeletonLoader from "../components/ui/loading";
 import PWAInstaller from "../components/features/pwa/PWAInstaller";
 import SEO from "../components/features/seo/SEO";
 import Modal from "../components/ui/modal/Modal";
