@@ -1,6 +1,27 @@
 {
   "permissions": {
-    "allow": ["Bash(cp:*)", "Bash(npx tsc:*)", "Bash(npm run build:*)"],
-    "deny": ["Bash(npm run dev:*)"]
+    "allow": [
+      "Bash(cp:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm run build:*)",
+      "Bash(git checkout:*)",
+      "Bash(npm install)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: 依存関係を最新版に更新しセキュリティ脆弱性を解決\n\nSnykの推奨に従い、以下の依存関係を更新：\n\n更新内容:\n- @anthropic-ai/claude-code: 1.0.73 → 2.0.31 (セキュリティ修正)\n  - Command Injection脆弱性を解決 (SNYK-JS-ANTHROPICAICLAUDECODE-14089789)\n- framer-motion: 12.23.12 → 12.23.24 (11バージョンアップ)\n- react-router-dom: 7.7.0 → 7.9.5 (2バージョンアップ)\n\n結果:\n- npm audit: 脆弱性 0件\n- ビルド正常完了\n- すべてのSnyk推奨アップデートを統合\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)",
+      "Bash(gh pr list:*)",
+      "Bash(gh pr create:*)",
+      "Bash(gh pr close:*)",
+      "Bash(git pull:*)",
+      "Bash(npm audit:*)",
+      "Bash(gh pr view:*)",
+      "Bash(for comp in \"ProjectCard\" \"ProjectDetailPage\" \"AnimatedSection\")",
+      "Bash(do echo \"=== $comp ===\")",
+      "Bash(done)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nrefactor: 未使用コンポーネントを削除してコードベースをクリーンアップ\n\n削除したコンポーネント:\n- ProjectDetailPage.tsx: どこからも参照されていないプロジェクト詳細ページ\n- AnimatedSection.tsx: 使用されていないアニメーションコンポーネント\n- AnimatedSectionProps型定義: 関連する型定義も削除\n\n効果:\n- コードベースの整理と可読性の向上\n- メンテナンス性の改善\n- ビルド正常完了を確認済み\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
+    ],
+    "deny": [
+      "Bash(npm run dev:*)"
+    ]
   }
 }

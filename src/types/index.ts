@@ -32,16 +32,6 @@ export interface SkeletonLoaderProps {
 }
 
 /**
- * アニメーション関連の型定義
- */
-export interface AnimatedSectionProps {
-  children: React.ReactNode;
-  className?: string;
-  delay?: number;
-  direction?: "up" | "down" | "left" | "right" | "scale";
-}
-
-/**
  * レイアウト関連の型定義
  */
 export interface LayoutProps {
