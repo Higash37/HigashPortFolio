@@ -1,9 +1,9 @@
 // Reactフック
 import { useState, useEffect } from "react";
 // 内部コンポーネント
-import NavigationHeader from "./navigation/NavigationHeader";
-import Sidebar from "./navigation/Sidebar";
-import SkeletonLoader from "../ui/loading/SkeletonLoader";
+import NavigationHeader from "./Navigation/NavigationHeader";
+import Sidebar from "./Navigation/Sidebar";
+import SkeletonLoader from "../ui/Loading/SkeletonLoader";
 // 共通型定義
 import type { LayoutProps } from "../../types/index";
 
