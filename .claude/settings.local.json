@@ -18,7 +18,10 @@
       "Bash(for comp in \"ProjectCard\" \"ProjectDetailPage\" \"AnimatedSection\")",
       "Bash(do echo \"=== $comp ===\")",
       "Bash(done)",
-      "Bash(git commit -m \"$(cat <<''EOF''\nrefactor: 未使用コンポーネントを削除してコードベースをクリーンアップ\n\n削除したコンポーネント:\n- ProjectDetailPage.tsx: どこからも参照されていないプロジェクト詳細ページ\n- AnimatedSection.tsx: 使用されていないアニメーションコンポーネント\n- AnimatedSectionProps型定義: 関連する型定義も削除\n\n効果:\n- コードベースの整理と可読性の向上\n- メンテナンス性の改善\n- ビルド正常完了を確認済み\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
+      "Bash(git commit -m \"$(cat <<''EOF''\nrefactor: 未使用コンポーネントを削除してコードベースをクリーンアップ\n\n削除したコンポーネント:\n- ProjectDetailPage.tsx: どこからも参照されていないプロジェクト詳細ページ\n- AnimatedSection.tsx: 使用されていないアニメーションコンポーネント\n- AnimatedSectionProps型定義: 関連する型定義も削除\n\n効果:\n- コードベースの整理と可読性の向上\n- メンテナンス性の改善\n- ビルド正常完了を確認済み\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git commit -m \"$(cat <<''EOF''\ndocs: プロジェクト現状レポートを追加\n\nポートフォリオサイトの現状を包括的にドキュメント化：\n- サイトの健全性評価（ビルド、セキュリティ、パフォーマンス）\n- 技術スタック詳細\n- 最近の改善履歴（#49-#54）\n- コードベース構造\n- 品質指標\n- 今後の改善提案\n- メトリクスと学び\n\n目的: プロジェクトの状態を継続的に追跡し、改善の歴史を記録\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git reset:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [
       "Bash(npm run dev:*)"
